@@ -1,7 +1,3 @@
-@import "variables";
-@import "fonts";
-@import "libs";
-
 ::-webkit-input-placeholder {
 	color: lighten($text, 25%);
 }
@@ -140,55 +136,6 @@ button, .btn {
 .hidden {
 	display: none !important;
 }
-.burger {
-	height: 25px;
-	width: 30px;
-	position: relative;
-	transition: .5s ease-in-out;
-	cursor: pointer;
-    z-index: 1;
-	span {
-		display: block;
-		position: absolute;
-		height: 4px;
-		width: 100%;
-		background: $text;
-		border-radius: 4px;
-		opacity: 1;
-		left: 0;
-		transition: .25s ease-in-out;
-		&:nth-child(1) {
-  			top: 0px;
-		}
-		&:nth-child(2),
-		&:nth-child(3) {
-			top: 10px;
-		}
-		&:nth-child(4) {
-			top: 20px;
-		}
-	}
-	&.active {
-		span {
-			&:nth-child(1) {
-				top: 10px;
-				width: 0%;
-				left: 50%;
-			}
-			&:nth-child(2) {
-				transform: rotate(45deg);
-			}
-			&:nth-child(3) {
-				transform: rotate(-45deg);
-			}
-			&:nth-child(4) {
-				top: 10px;
-				width: 0%;
-				left: 50%;
-			}
-		}
-	}
-}
 .img_cover {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -196,27 +143,3 @@ button, .btn {
 	height: 100%;
 	width: 100%;
 }
-
-/*-- HEADER --*/
-.header {
-	flex: 0 0 auto;
-}
-
-/*-- MAIN --*/
-.main {
-	flex: 1 0 auto;
-	overflow: hidden;
-	padding-top: 80px;
-}
-
-
-// 404
-
-
-// FOOTER
-.footer {
-	flex: 0 0 auto;
-
-}
-
-@import "media"; /* Always at the end*/
