@@ -3,30 +3,4 @@
 	flex: 1 0 auto;
 	overflow: hidden;
     padding-top: 80px;
-    background: #eee;
-}
-.accent {
-    color: $accent;
-}
-.secondary {
-    color: $secondary;
-}
-.text {
-    color: $text;
-}
-.text_secondary {
-    color: $text_secondary;
-}
-.test_div {
-    background: $secondary;
-    @extend.animate;
-    &:hover {
-        background: $accent;
-    }
-    .test_div2 {
-        background: red;
-    }
-    &.black {
-        background: #000;
-    }
 }

@@ -14,7 +14,11 @@
 
 /* ≥768px */
 @include media-breakpoint-down(sm) {
-
+    .footer {
+        &_item {
+            text-align: center;
+        }
+    }
 }
 
 /* ≥576px */
