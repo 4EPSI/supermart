@@ -2,8 +2,20 @@
 // HEADER
 .header {
 	flex: 0 0 auto;
-	height: 80px;
+	height: 200px;
+	background: #3b83d4;
+	&_logo {
+		height: 40px;
+	}
 }
+.test {
+	background: #3f8ce2;
+}
+.menu-item {
+	color: #fff;
+	font-size: 12px;
+}
+
 .burger {
 	height: 25px;
 	width: 30px;
