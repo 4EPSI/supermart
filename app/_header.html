@@ -1,29 +1,46 @@
 <header class="header">
-	<div class="container align-items-center d-flex justify-content-between pt-2 pb-2">
-		<div class="menu d-flex">
-			<a href="#login/signup" class="menu-item go_to mr-2">Login / Signup</a>
-			<a href="#usd" class="menu-item go_to pr-3">USD</a>
-
-		</div>
-		<div class="menu_left">
-			<a href="#help" class="menu-item go_to pr-3">Help</a>
-			<a href="#Wishlist" class="menu-item go_to pr-3">Wishlist</a>
-			<a href="#english" class="menu-item go_to pr-3">English</a>
-			<a href="#download_app" class="menu-item go_to pr-3">Download App</a>
+	<div class="header_top">
+		<div class="container align-items-center d-flex justify-content-between pt-2 pb-2">
+			<div class="menu d-flex align-items-center">
+				<a href="#login/signup" class="menu-item go_to mr-2">Login / Signup</a>
+				<div class="header_border ml-3 mr-4">
+					<div class="border_menu"></div>
+				  </div>
+				<a href="#usd" class="menu-item go_to pr-3">USD</a>
+			</div>
+			<div class="menu d-flex align-items-center">
+				<a href="#help" class="menu-item go_to pr-3">Help</a>
+				<div class="header_border ml-3 mr-4">
+					<div class="border_menu"></div>
+				</div>
+				<a href="#Wishlist" class="menu-item go_to pr-3"><i class="far fa-heart"></i> Wishlist</a>
+				<div class="header_border ml-3 mr-4">
+					<div class="border_menu"></div>
+				  </div>
+				<a href="#english" class="menu-item go_to pr-3">English</a>
+				<button class="header_button_app" type="submit">Download App</button>
+				<!-- <a href="#download_app" class="menu-item go_to pr-3">Download App</a> -->
+			</div>
 		</div>
 	</div>
-	<div class="test p-5">
+	<div class="header_content pt-3 pb-3">
 		<div class="align-items-center container d-flex justify-content-between">
 			<div class="header_logo">
 				<img src="img/logo_white.png" alt="img">
 			</div>
-			<form class="d-flex align-items-center" action="#">
+			<form class="d-flex align-items-center search_form" action="#">
 				<input type="text" name="Search..." placeholder="Search..." />
 				<select class="select_" name="select" required>
 					<option value="value1">All Categories</option>
 				</select>
-				<button type="submit"><i class="fas fa-search"></i></button>
-				<!-- <a href="#"><i class="fas fa-search"></i></a> -->
+				<button class="search_form_btn" type="submit"><i class="fas fa-search"></i></button>
+				<div class="basket d-flex">
+					<button class="ml-4 basket_btn" type="submit"><i class="fas fa-shopping-bag"></i></button>
+					<div class="border">
+						<div class="border_line"></div>
+					  </div>
+					<div class="basket_item">0 Item: <span>$0.00</span> </div>
+				</div>
 			</form>
 		</div>
 	</div>
