@@ -31,19 +31,32 @@
 	<div class="header_top">
 		<div class="container align-items-center d-flex justify-content-between pt-2 pb-2">
 			<div class="menu d-flex align-items-center">
-				<a href="#login/signup" class="menu-item go_to mr-2">Login / Signup</a>
-				<div class="header_border ml-3 mr-4">
+				<a href="#login/signup" class="menu-item go_to">Login / Signup</a>
+				<div class="header_border ml-4 mr-4">
 					<div class="border_menu"></div>
 				  </div>
-				<a href="#usd" class="menu-item go_to pr-3">USD</a>
+				<!-- <a class="menu-item pr-3">USD</a> -->
+				<div class="dropdown">
+					<div class="menu-item menu-item_drop dropdown-toggle" id="currancy" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						USD
+					</div>
+					<div class="dropdown-menu" aria-labelledby="currancy">
+					  <!-- <a class="dropdown-item" href="#">UAH</a>
+					  <a class="dropdown-item" href="#">EUR</a> -->
+					  <ul>
+						<li class="dropdown-item">UAH</li>
+						<li class="dropdown-item">EUR</li>
+					  </ul>
+					</div>
+				  </div>
 			</div>
 			<div class="menu d-flex align-items-center">
-				<a href="#help" class="menu-item go_to pr-3">Help</a>
-				<div class="header_border ml-3 mr-4">
+				<a href="#help" class="menu-item go_to">Help</a>
+				<div class="header_border ml-4 mr-4">
 					<div class="border_menu"></div>
 				</div>
-				<a href="#Wishlist" class="menu-item go_to pr-3"><i class="far fa-heart"></i> Wishlist</a>
-				<div class="header_border ml-3 mr-4">
+				<a href="#Wishlist" class="menu-item go_to"><i class="far fa-heart"></i> Wishlist</a>
+				<div class="header_border ml-4 mr-4">
 					<div class="border_menu"></div>
 				  </div>
 				<a href="#english" class="menu-item go_to pr-3">English</a>
@@ -175,6 +188,8 @@
     </div>
 </footer>
 	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/bootstrap/js/popper.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

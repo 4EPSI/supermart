@@ -32,6 +32,9 @@
 .menu-item {
 	color: #fff;
 	font-size: 12px;
+	&_drop {
+		cursor: pointer;
+	}
 }
 .burger {
 	height: 25px;
