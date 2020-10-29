@@ -1,48 +1,45 @@
 <header class="header">
 	<div class="header_top">
 		<div class="container align-items-center d-flex justify-content-between pt-2 pb-2">
-			<div class="menu d-flex align-items-center">
-				<a href="#login/signup" class="menu-item go_to">Login / Signup</a>
-				<div class="header_border ml-4 mr-4">
-					<div class="border_menu"></div>
-				  </div>
-				<!-- <a class="menu-item pr-3">USD</a> -->
-				<div class="dropdown">
-					<div class="menu-item menu-item_drop dropdown-toggle" id="currancy" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						USD
-					</div>
-					<div class="dropdown-menu" aria-labelledby="currancy">
-					  <!-- <a class="dropdown-item" href="#">UAH</a>
-					  <a class="dropdown-item" href="#">EUR</a> -->
-					  <ul>
-						<li class="dropdown-item">UAH</li>
-						<li class="dropdown-item">EUR</li>
-					  </ul>
-					</div>
-				  </div>
-			</div>
-			<div class="menu d-flex align-items-center">
-				<a href="#help" class="menu-item go_to">Help</a>
+			<div class="header_top_menu d-flex align-items-center">
+				<div class="menu_item">Login / Signup</div>
 				<div class="header_border ml-4 mr-4">
 					<div class="border_menu"></div>
 				</div>
-				<a href="#Wishlist" class="menu-item go_to"><i class="far fa-heart"></i> Wishlist</a>
-				<div class="header_border ml-4 mr-4">
-					<div class="border_menu"></div>
-				  </div>
 				<div class="dropdown">
-					<div class="menu-item menu-item_drop dropdown-toggle pr-3" id="language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<div class="menu_item menu_item_drop dropdown-toggle" id="currancy" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false"> USD
+					</div>
+					<div class="dropdown-menu" aria-labelledby="currancy">
+						<ul>
+							<li class="dropdown-item">UAH</li>
+							<li class="dropdown-item">EUR</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex align-items-center">
+				<a href="#" class="header_top_menu_item menu_item pr-3 ml-3">Help</a>
+				<!-- <div class="header_border ml-4 mr-4">
+					<div class="border_menu"></div>
+				</div> -->
+				<a href="#" class="header_top_menu_item menu_item pr-3 ml-3"><i class="far fa-heart"></i> Wishlist</a>
+				<!-- <div class="header_border ml-4 mr-4">
+					<div class="border_menu"></div>
+				</div> -->
+				<div class="dropdown">
+					<div class="menu_item menu_item_drop dropdown-toggle pr-3 ml-3" id="language" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
 						English
 					</div>
 					<div class="dropdown-menu" aria-labelledby="language">
-					  <ul>
-						<li class="dropdown-item">English</li>
-						<li class="dropdown-item">Russian</li>
-					  </ul>
+						<ul>
+							<li class="dropdown-item">English</li>
+							<li class="dropdown-item">Russian</li>
+						</ul>
 					</div>
-				  </div>
+				</div>
 				<button class="header_button_app" type="submit">Download App</button>
-				<!-- <a href="#download_app" class="menu-item go_to pr-3">Download App</a> -->
 			</div>
 		</div>
 	</div>
@@ -51,50 +48,47 @@
 			<div class="header_logo">
 				<img src="img/logo_white.png" alt="img">
 			</div>
-			<form class="search_form d-flex align-items-center" action="#">
-				<input class="search_form_input" type="search" name="search" placeholder="Search..." />
+			<div class="d-flex align-items-center">
+				<form class="search_form d-flex align-items-center" action="#">
+					<input class="search_form_input" type="search" name="search" placeholder="Search..." />
 
-				<div class="dropdown search_form_categories">
-					<div class="search_form_categories_field dropdown-toggle pr-3 pl-3 d-flex align-items-center" id="categories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						All Categories
+					<div class="dropdown search_form_categories">
+						<div class="search_form_categories_field dropdown-toggle pr-3 pl-3 d-flex align-items-center"
+							id="categories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							All Categories
+						</div>
+						<div class="dropdown-menu" aria-labelledby="categories">
+							<ul>
+								<li class="dropdown-item">Accessories</li>
+								<li class="dropdown-item">Decors</li>
+							</ul>
+						</div>
 					</div>
-					<div class="dropdown-menu" aria-labelledby="categories">
-					  <ul>
-						<li class="dropdown-item">Accessories</li>
-						<li class="dropdown-item">Decors</li>
-					  </ul>
-					</div>
-				</div>
 
-				<button class="search_form_btn" type="submit"><i class="fas fa-search"></i></button>
+					<button class="search_form_btn" type="submit"><i class="fas fa-search"></i></button>
+				</form>
 				<div class="basket d-flex">
 					<button class="ml-4 basket_btn" type="submit"><i class="fas fa-shopping-bag"></i></button>
 					<div class="border">
 						<div class="border_line"></div>
-					  </div>
+					</div>
 					<div class="basket_item">0 Item: <span>$0.00</span> </div>
 				</div>
-			</form>
+			</div>
 		</div>
 	</div>
-		<!-- <div class="container d-flex justify-content-between align-content-center">
-			<a href="/" class="logo">
-				<img src="img/logo.svg" alt="logo">
-			</a>
-			<div class="d-flex align-items-center">
-				<ul class="menu d-flex align-items-center flex-column flex-lg-row">
-					<li><a class="go_to" href="#top">home</a></li>
-					<li><a href="tours.html">tours</a></li>
-					<li><a class="go_to" href="#about">about us</a></li>
-					<li><a href="blog.html">blog</a></li>
-					<li><a class="go_to" href="#footer">contacts</a></li>
-				</ul>
-				<div class="burger d-block d-lg-none">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
+	<div class="header_menu pt-3">
+		<div class="container align-items-center d-flex">
+			<div class="departments_menu d-flex align-items-center justify-content-between pl-3 pr-3">Departments <i class="fas fa-bars"></i></div>
+			<div class="header_menu_content">
+				<a href="#">Home</a>
+				<a href="#">Shop</a>
+				<a href="#">Fashion</a>
+				<a href="#">Electronics</a>
+				<a href="#">pages</a>
+				<a href="#">Features</a>
+				<a href="#">BLog</a>
 			</div>
-		</div> -->
-	</header>
+		</div>
+	</div>
+</header>
