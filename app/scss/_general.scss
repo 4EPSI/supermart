@@ -1,17 +1,17 @@
 ::-webkit-input-placeholder {
-	color: lighten($text, 25%);
+	color: lighten($text, 50%);
 }
 ::-moz-placeholder {
-	color: lighten($text, 25%);
+	color: lighten($text, 50%);
 }
 :-ms-input-placeholder {
-	color: lighten($text, 25%);
+	color: lighten($text, 50%);
 }
 ::-ms-input-placeholder {
-	color: lighten($text, 25%);
+	color: lighten($text, 50%);
 }
 ::placeholder {
-	color: lighten($text, 25%);
+	color: lighten($text, 50%);
 }
 ::-moz-selection {
 	background-color: $accent;

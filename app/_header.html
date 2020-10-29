@@ -30,7 +30,17 @@
 				<div class="header_border ml-4 mr-4">
 					<div class="border_menu"></div>
 				  </div>
-				<a href="#english" class="menu-item go_to pr-3">English</a>
+				<div class="dropdown">
+					<div class="menu-item menu-item_drop dropdown-toggle pr-3" id="language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						English
+					</div>
+					<div class="dropdown-menu" aria-labelledby="language">
+					  <ul>
+						<li class="dropdown-item">English</li>
+						<li class="dropdown-item">Russian</li>
+					  </ul>
+					</div>
+				  </div>
 				<button class="header_button_app" type="submit">Download App</button>
 				<!-- <a href="#download_app" class="menu-item go_to pr-3">Download App</a> -->
 			</div>
@@ -41,11 +51,21 @@
 			<div class="header_logo">
 				<img src="img/logo_white.png" alt="img">
 			</div>
-			<form class="d-flex align-items-center search_form" action="#">
-				<input type="text" name="Search..." placeholder="Search..." />
-				<select class="select_" name="select" required>
-					<option value="value1">All Categories</option>
-				</select>
+			<form class="search_form d-flex align-items-center" action="#">
+				<input class="search_form_input" type="search" name="search" placeholder="Search..." />
+
+				<div class="dropdown search_form_categories">
+					<div class="search_form_categories_field dropdown-toggle pr-3 pl-3 d-flex align-items-center" id="categories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						All Categories
+					</div>
+					<div class="dropdown-menu" aria-labelledby="categories">
+					  <ul>
+						<li class="dropdown-item">Accessories</li>
+						<li class="dropdown-item">Decors</li>
+					  </ul>
+					</div>
+				</div>
+
 				<button class="search_form_btn" type="submit"><i class="fas fa-search"></i></button>
 				<div class="basket d-flex">
 					<button class="ml-4 basket_btn" type="submit"><i class="fas fa-shopping-bag"></i></button>

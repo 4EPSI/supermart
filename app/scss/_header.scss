@@ -26,6 +26,8 @@
 			width: 110px;
 			font-size: 11px;
 			text-transform: uppercase;
+			background: #3576be;
+			border: none;
 		}
 	}
 }
@@ -87,6 +89,13 @@
 }
 .search {
 	&_form {
+		&_input {
+			border: none;
+			height: 45px;
+			border-right: 1px solid #e8e8e8;
+			border-radius: 5px 0 0 5px;
+			width: 400px;
+		}
 		&_btn {
 			background: $secondary;
 			color: $text;
@@ -94,6 +103,15 @@
 			height: 45px;
 			min-width: 0;
 			border-radius: 0 5px 5px 0;
+			border: none;
+		}
+		&_categories {
+			color: $text;
+			&_field {
+				background: #fff;
+				height: 45px;
+				cursor: pointer;
+			}
 		}
 	}
 }
@@ -118,6 +136,7 @@
 		font-size: 12px;
 		padding-left: 10px;
 		border-radius: 0 5px 5px 0;
+		color: #555555;
 	}
 }
 .border {
