@@ -14,6 +14,11 @@
 	}
 	&_content {
 		background: $accent;
+		// &_menu {
+		// 	background: #fff;
+		// 	color: #707070;
+		// 	font-size: 14px;
+		// }
 	}
 	span {
 		color: $accent;
@@ -35,6 +40,66 @@
 	}
 	&_menu {
 		background: #408de4;
+		&_content {
+			background: #333333;
+			color: #eeeeee;
+			height: 55px;
+			font-size: 12px;
+			width: 500px;
+			text-transform: uppercase;
+		}
+		&_item {
+			position: relative;
+			&:before {
+				content: attr(data-content);
+				color: #fff;
+				background: #ea5c5c;
+				padding: 0 5px;
+				position: absolute;
+				right: -10px;
+  				top: -25px;
+				font-size: 10px;
+				height: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: -5px;
+				right: 5px;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 5px solid #ea5c5c;
+			}
+			&_new {
+				position: relative;
+				&:before {
+					content: attr(data-content);
+					color: #fff;
+					background: #24bbbc;
+					padding: 0 5px;
+					position: absolute;
+					right: -25px;
+					top: -25px;
+					font-size: 10px;
+					height: 20px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					top: -5px;
+					right: -10px;
+					border-left: 5px solid transparent;
+					border-right: 5px solid transparent;
+					border-top: 5px solid #24bbbc;
+				}
+			}
+		}
 	}
 }
 .menu_item {
@@ -130,6 +195,7 @@
 		min-width: 0;
 		border-radius: 5px 0 0 5px;
 		border: none;
+		border-right: 1px solid #e5e5e5;
 	}
 	&_item {
 		width: 100px;
@@ -161,3 +227,27 @@
 		color: $text;
 	}
 }
+.call {
+	&_us {
+		background: #333;
+		color: #bbbbbb;
+		height: 55px;
+		width: 340px;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+	&_free {
+		background: #ffd200;
+		height: 20px;
+		font-size: 12px;
+		width: 100px;
+		text-align: center;
+		color: #333333;
+		border-radius: 1px;
+	}
+}
+// .content {
+// 	&_menu {
+// 		background: #ffffff;
+// 	}
+// }
