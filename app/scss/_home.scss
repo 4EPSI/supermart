@@ -1,0 +1,21 @@
+// MAIN
+.main {
+	flex: 1 0 auto;
+	overflow: hidden;
+	&_list {
+		border: 1px solid #e8e8e8;
+		border-top: none;
+	}
+}
+
+// Home slider
+.home_slider {
+	height: 100%;
+	.owl-stage-outer,
+	.owl-stage,
+	.owl-item,
+	.slider_item {
+		height: 100%;
+	}
+}
+
