@@ -9,7 +9,15 @@
 
 /* ≥992px */
 @include media-breakpoint-down(md) {
-
+    .search_form_input {
+        width: auto;
+    }
+    .basket_btn {
+        border-radius: 5px;
+    }
+    .header_menu_content {
+        margin-left: 0;
+    }
 }
 
 /* ≥768px */

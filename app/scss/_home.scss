@@ -33,6 +33,22 @@
 	.slider_item {
 		height: 100%;
 	}
+	.slider_item {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background: #000;
+			opacity: 0.5;
+		}
+		&_content {
+			position: relative;
+		}
+	}
 	.owl-dots {
 		position: absolute;
 		bottom: 0;
@@ -57,33 +73,15 @@
 	}
 }
 // Section_sale
-// .sale_content {
-// 	background: #d0d0d0;
-// }
 .sale {
-	&_content {
+	&_item {
 		background: #d0d0d0;
 		height: 210px;
 	}
 	&_title {
 		color:#ffffff;
 		text-transform: uppercase;
-		font-size: 21px;
-		&_canon {
-			color: #4b4c4e;
-			font-size: 22px;
-			text-transform: uppercase;
-		}
-		&_letv {
-			text-transform: uppercase;
-			font-size: 24px;
-			color: #2a2b2e;
-		}
-		&_oneday {
-			color: #4b4c4e;
-			font-size: 22px;
-			text-transform: uppercase;
-		}
+		font-size: 22px;
 	}
 	&_text {
 		background: #a5c655;
@@ -92,63 +90,35 @@
 		width: 155px;
 		text-transform: uppercase;
 		font-size: 12px;
-		&_flat {
-			color: #555555;
-		}
-		&_new {
-			color: #fcfcfc;
-			font-size: 14px;
-			text-transform: uppercase;
-		}
-	}
-	&_money {
-		color: #ffff;
 	}
 	&_offer {
 		background: #24bbbc;
 		width: 100px;
 		text-align: center;
-		font-size: 11px;
+		font-size: 12px;
 		color: #fff;
 	}
 	&_button {
 		text-transform: uppercase;
 		color: #4d4c4c;
-		font-size: 10px;
+		font-size: 12px;
 		background: #fcf7f4;
 		width: 75px;
 		text-align: center;
 	}
 }
-// section_hot
-.hot {
-	&_content {
-		border: 1px solid #e5e5e5;
-	}
+
+// sidebar slider
+.sidebar_slider {
+	border: 1px solid #e5e5e5;
 	&_title {
-		background: #eeeeee;
-		color: $text;
 		text-transform: uppercase;
-		font-size: 15px;
+		background: #eeeeee;
 		border-bottom: 1px solid #e5e5e5;
 	}
-	// &_hours {
-	// 	border: 1px solid #e5e5e5;
-	// 	border-bottom: none;
-	// }
-	&_text {
-		font-size: 14px;
-		color: #444444;
-		text-align: center;
-	}
-	&_sum {
-		color: $text;
-		font-size: 13px;
-		text-align: center;
-	}
-	&_star {
-		text-align: center;
-	}
+}
+// hot_border
+.hot {
 	&_border {
 		background: #f6f6f6;
 		border-top: 1px solid #e5e5e5;
@@ -173,28 +143,79 @@
 		border-right: none;
 	}
 }
-.hot_hours img {
-	width: 200px;
-    height: 210px;
-}
+
+
+// section_hot
+// .hot {
+// 	&_text {
+// 		font-size: 14px;
+// 		color: #444444;
+// 		text-align: center;
+// 	}
+// 	&_sum {
+// 		color: $text;
+// 		font-size: 13px;
+// 		text-align: center;
+// 	}
+// 	&_star {
+// 		text-align: center;
+// 	}
+// 	&_border {
+// 		background: #f6f6f6;
+// 		border-top: 1px solid #e5e5e5;
+// 	}
+// 	&_numeral {
+// 		color: #080808;
+// 		font-size: 13px;
+// 		text-align: center;
+// 	}
+// 	&_time {
+// 		color: #777777;
+// 		font-size: 13px;
+// 		text-align: center;
+// 	}
+// 	&_border {
+// 		&_right {
+// 			width: 25%;
+// 			border-right: 1px solid #e5e5e5;
+// 		}
+// 	}
+// 	&_none {
+// 		border-right: none;
+// 	}
+// }
+// .hot_hours img {
+// 	width: 200px;
+//     height: 210px;
+// }
+
+
 // New Product
-.Product {
-	&_title {
-		color: $text;
-		font-size: 18px;
-		text-transform: uppercase;
-	}
-}
-.product_media {
-	color: #777777;
-	font-size: 12px;
-	text-transform: uppercase;
-}
-.product_media span {
-	cursor: pointer;
-  	transition: all 0.3s ease;
-}
-.product_media span:hover,
-.product_media span.active {
-	color: $accent;
-}
+// .Product {
+// 	&_title {
+// 		color: $text;
+// 		font-size: 18px;
+// 		text-transform: uppercase;
+// 	}
+// }
+// .product_media {
+// 	color: #777777;
+// 	font-size: 12px;
+// 	text-transform: uppercase;
+// }
+// .product_media span {
+// 	cursor: pointer;
+//   	transition: all 0.3s ease;
+// }
+// .product_media span:hover,
+// .product_media span.active {
+// 	color: $accent;
+// }
+// .sleeve_striped {
+// 	border: 1px solid #e8e8e8;
+// 	&_title {}
+// }
+// .tshirt_img img {
+// 	height: 200px;
+// 	width: 200px;
+// }

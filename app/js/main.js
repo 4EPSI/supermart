@@ -11,8 +11,14 @@ $('.home_slider').owlCarousel({
         '<i class="fa fa-angle-right" aria-hidden="true"></i>'
     ]
 });
+
 // tabs
 $('.product_media span').on('click', function () {
     $('.product_media span').removeClass('active');
     $(this).addClass('active');
+});
+
+// Dropdown select
+$('.dropdown-item').on('click', function(){
+    $(this).closest('.d_select').find('.dropdown-toggle').text($(this).text());
 });

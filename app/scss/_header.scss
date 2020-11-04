@@ -185,9 +185,7 @@
 	&_item {
 		width: 100px;
 		height: 45px;
-		background: #fff;
-		display: flex;
-		align-items: center;
+		background: #fff;		
 		font-size: 12px;
 		padding-left: 10px;
 		border-radius: 0 5px 5px 0;
@@ -197,9 +195,7 @@
 .departments {
 	&_menu {
 		background: #ffd200;
-   		text-transform: uppercase;
-    	display: flex;
-    	align-items: center;
+   		text-transform: uppercase;    	
 		color: $text;
 		height: 100%;
 	}

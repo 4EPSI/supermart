@@ -120,3 +120,20 @@ button, .btn {
 	height: 100%;
 	width: 100%;
 }
+
+// Prod card
+.prod_card {
+	&_img {
+		height: 250px;
+	}
+	&_price {
+		text-align: center;
+	}
+	&_rate {
+		text-align: center;
+		font-size: 12px;
+		i.active {
+			color: $secondary;
+		}
+	}
+}
