@@ -22,3 +22,31 @@ $('.product_media span').on('click', function () {
 $('.dropdown-item').on('click', function(){
     $(this).closest('.d_select').find('.dropdown-toggle').text($(this).text());
 });
+
+// Custom nav btns
+$('.customNextBtn').click(function() {
+    $(this).closest('.custom_slider').find('.owl-carousel').trigger('next.owl.carousel');
+});
+$('.customPrevBtn').click(function() {
+    $(this).closest('.custom_slider').find('.owl-carousel').trigger('prev.owl.carousel');
+});
+
+// Hot slider
+$('.hot_slider').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: false,
+    mouseDrag: false,
+    items: 1
+});
+
+// Products slider
+$('.products_slider').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: false,
+    mouseDrag: false,
+    items: 4
+});
