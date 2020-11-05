@@ -143,3 +143,66 @@
 		border-right: none;
 	}
 }
+// tag sale
+.tag_sale {
+	background: #ea5c5c;
+	color: #ffffff;
+	font-size: 12px;
+	height: 20px;
+	width: 40px;
+	text-align: center;
+    border-radius: 2px;
+	}
+// prod_card
+.prod {
+	&_border {
+		border: 1px solid #e8e8e8;
+	}
+	&_title {
+		color: #444444;
+		background: red;
+	}
+}
+// section_social
+.section_social {
+	background: #408de4;
+	height: 100px;
+}
+.social {
+	&_text {
+		text-transform: uppercase;
+		font-size: 14px;
+		color: #fff;
+	}
+	&_form input {
+		width: 400px;
+		border: none;
+		border-radius: 2px 0 0 2px;
+	}
+	&_btn {
+		background:$secondary;
+		color: #2c2c2c;
+		border-radius: 0 2px 2px 0;
+		border: none;
+	}
+}
+// section services
+.services {
+	&_border {
+		border-top: 1px solid #ececec;
+	}
+	&_content {
+		text-align: center;
+	}
+	&_title {
+		color: $text;
+		text-transform: uppercase;
+	}
+    &_text {
+		color: #999999;
+	}
+}
+.border_right {
+	border-right: 1px solid #ececec;
+	height: 100%;
+}
