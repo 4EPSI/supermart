@@ -3,7 +3,7 @@
 	flex: 1 0 auto;
 	overflow: hidden;
 	&_list {
-		border: 1px solid #e8e8e8;
+		border: 1px solid $border;
 		border-top: none;
 	}
 	&_title {
@@ -23,7 +23,6 @@
 		border-radius: 2px;
 	}
 }
-
 // Home slider
 .home_slider {
 	height: 100%;
@@ -72,7 +71,6 @@
 		}
 	}
 }
-
 // Section_sale
 .sale {
 	&_item {
@@ -108,7 +106,6 @@
 		text-align: center;
 	}
 }
-
 // sidebar slider
 .sidebar_slider {
 	border: 1px solid #e5e5e5;
@@ -116,6 +113,19 @@
 		text-transform: uppercase;
 		background: #eeeeee;
 		border-bottom: 1px solid #e5e5e5;
+	}
+	&_nav {
+		height: 25px;
+		width: 25px;
+		border-radius: 50%;
+		background: #f7f7f7;
+		cursor: pointer;
+		color: $text_light;
+		@extend.animate;
+		&:hover {
+			color: #fff;
+			background: $accent;
+		}
 	}
 }
 // hot_border
@@ -163,4 +173,23 @@
 	text-align: center;
 	border-radius: 2px;
 }
-
+// Products slider
+.products_slider {
+	border: 1px solid $border;
+	.prod_card {
+		border-right: 1px solid $border;
+	}
+	&_nav {
+		border: 1px solid $border;
+		height: 25px;
+		width: 25px;
+		border-radius: 3px;
+		cursor: pointer;
+		color: $text_light;
+		@extend.animate;
+		&:hover {
+			color: #fff;
+			background: $accent;
+		}
+	}
+}

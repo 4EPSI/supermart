@@ -3,9 +3,14 @@
 	position: relative;
 	&_img {
 		height: 250px;
+		position: relative;
 	}
 	&_price {
 		text-align: center;
+	}
+	&_title {
+		color: #444444;
+		font-size: 14px;
 	}
 	&_rate {
 		text-align: center;
@@ -22,11 +27,43 @@
 		border-radius: 3px;
 		background: #000;
 		color: #ffffff;
+		z-index: 1;
 		&.sale {
 			background: $sale;
 		}
 		&.new {
 			background: $new;
+		}
+	}
+	&_actions {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background: #fff;
+		border: 1px solid $border;
+		border-left: none;
+    	border-right: none;
+		visibility: hidden;
+		opacity: 0;
+		@extend.animate;
+		&_item {
+			width: 25%;
+			height: 35px;
+			border-right: 1px solid $border;
+			&:last-child {
+				border-right: none;
+			}
+			&:hover {
+				background: $accent;
+				color: #fff;
+			}
+		}
+	}
+	&:hover {
+		.prod_card_actions {
+			visibility: visible;
+			opacity: 1;
 		}
 	}
 }
