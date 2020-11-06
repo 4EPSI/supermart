@@ -64,23 +64,22 @@
 						right: 5px;
 						border-left: 5px solid transparent;
 						border-right: 5px solid transparent;
-						border-top: 5px solid #ea5c5c;
 					}
 				}
 				&.hot {
 					&:before {
-						background: #ea5c5c;
+						background: $sale;
 					}
 					&:after {
-						border-top: 5px solid #ea5c5c;
+						border-top: 5px solid $sale;
 					}
 				}
 				&.new {
 					&:before {
-						background: #24bbbc;
+						background: $new;
 					}
 					&:after {
-						border-top: 5px solid #24bbbc;
+						border-top: 5px solid $new;
 					}
 				}
 			}
@@ -185,7 +184,7 @@
 	&_item {
 		width: 100px;
 		height: 45px;
-		background: #fff;		
+		background: #fff;
 		font-size: 12px;
 		padding-left: 10px;
 		border-radius: 0 5px 5px 0;
@@ -195,7 +194,7 @@
 .departments {
 	&_menu {
 		background: #ffd200;
-   		text-transform: uppercase;    	
+   		text-transform: uppercase;
 		color: $text;
 		height: 100%;
 	}
