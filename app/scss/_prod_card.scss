@@ -15,6 +15,7 @@
 	&_rate {
 		text-align: center;
 		font-size: 12px;
+		color: #ccc;
 		i.active {
 			color: $secondary;
 		}
@@ -64,6 +65,17 @@
 		.prod_card_actions {
 			visibility: visible;
 			opacity: 1;
+		}
+	}
+	&_short {
+		font-size: 14px;
+		border-bottom: 1px solid $border;
+		&:last-child {
+			border-bottom: none;
+		}
+		&_img {
+			height: 80px;
+			width: 80px;
 		}
 	}
 }

@@ -31,8 +31,8 @@ $('.customPrevBtn').click(function() {
     $(this).closest('.custom_slider').find('.owl-carousel').trigger('prev.owl.carousel');
 });
 
-// Hot slider
-$('.hot_slider').owlCarousel({
+// Sidebar slider
+$('.slider_slider').owlCarousel({
     loop: true,
     margin: 0,
     nav: false,

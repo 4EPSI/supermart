@@ -107,32 +107,63 @@
 	}
 }
 // sidebar slider
-.sidebar_slider {
-	border: 1px solid #e5e5e5;
-	&_title {
-		text-transform: uppercase;
-		background: #eeeeee;
-		border-bottom: 1px solid #e5e5e5;
-	}
-	&_nav {
-		height: 25px;
-		width: 25px;
-		border-radius: 50%;
-		background: #f7f7f7;
-		cursor: pointer;
-		color: $text_light;
-		@extend.animate;
-		&:hover {
-			color: #fff;
-			background: $accent;
+.sidebar {
+	&_block {
+		border: 1px solid $border;
+		&_title {
+			text-transform: uppercase;
+			background: #eeeeee;
+			border-bottom: 1px solid $border;
 		}
+		&_nav {
+			height: 25px;
+			width: 25px;
+			border-radius: 50%;
+			background: #f7f7f7;
+			cursor: pointer;
+			color: $text_light;
+			@extend.animate;
+			&:hover {
+				color: #fff;
+				background: $accent;
+			}
+		}
+		// &_img {
+		// 	height: 80px;
+		// 	width: 80px;
+		// 	text-align: center;
+		// 	& img {
+		// 		height: 100px;
+		// 		width: 50px;
+		// 	}
+		// }
+		// &_text {
+		// 	color: #444444;
+		// 	font-size: 14px;
+		// }
+		// &_price {
+		// 	color: #222222;
+		// 	font-size: 14px;
+		// }
+		// &_star {
+		// 	text-align: inherit;
+		// }
+		// &_content {
+		// 	border-top: 1px solid $border;
+		// }
 	}
 }
-// hot_border
-.hot {
-	&_border {
+// Counter
+.counter {
+	&_item {
 		background: #f6f6f6;
 		border-top: 1px solid #e5e5e5;
+		width: 25%;
+		text-align: center;
+		border-right: 1px solid $border;
+		&:last-child {
+			border-right: none;
+		}
 	}
 	&_numeral {
 		color: #080808;
@@ -143,15 +174,6 @@
 		color: #777777;
 		font-size: 13px;
 		text-align: center;
-	}
-	&_border {
-		&_right {
-			width: 25%;
-			border-right: 1px solid #e5e5e5;
-		}
-	}
-	&_none {
-		border-right: none;
 	}
 }
 // tag sale
@@ -192,4 +214,9 @@
 			background: $accent;
 		}
 	}
+}
+// Sentence_section
+.sentence_content {
+	background: #cccccc;
+	width: 410px;
 }
