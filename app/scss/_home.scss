@@ -128,6 +128,7 @@
 				background: $accent;
 			}
 		}
+
 		// &_img {
 		// 	height: 80px;
 		// 	width: 80px;
@@ -151,6 +152,44 @@
 		// &_content {
 		// 	border-top: 1px solid $border;
 		// }
+	}
+	&_sale {
+		height: 300px;
+		color: #fff;
+		&_button {
+			color: black;
+			background: #fff;
+		}
+		&_title,
+		&_text {
+			text-shadow: 0 0px 20px #000;
+		}
+	}
+	&_reviews {
+		text-align: center;
+		background: $accent;
+		text-transform: uppercase;
+		color: #fff;
+		&_content {
+			border: 1px solid $border;
+			border-top: none;
+		}
+		&_text {
+			color: #777777;
+			font-size: 14px;
+			text-align: center;
+		}
+		&_img {
+			height: 80px;
+			width: 80px;
+			border-radius: 50%;
+			overflow: hidden;
+			img {
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
 	}
 }
 // Counter
