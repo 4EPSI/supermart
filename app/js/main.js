@@ -41,6 +41,16 @@ $('.slider_slider').owlCarousel({
     items: 1
 });
 
+// Sidebar single slider
+$('.sidebar_single_slider').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: true,
+    mouseDrag: false,
+    items: 1
+});
+
 // Products slider
 $('.products_slider').owlCarousel({
     loop: true,
