@@ -239,6 +239,11 @@
 			background: $accent;
 		}
 	}
+	&_title {
+		text-transform: uppercase;
+		color: $text;
+		font-size: 18px;
+	}
 }
 // Sidebar Single Slider
 .sidebar_single_slider {
@@ -267,8 +272,75 @@
 		}
 	}
 }
-// Sentence_section
-.sentence_block {
-	background: #cccccc;
-	width: 410px;
+// Block Shop
+.block_shop {
+	&_img {
+		width: 410px;
+    	height: 200px;
+	}
+	&_title {
+		text-transform: uppercase;
+		color: #ffffff;
+		font-size: 20px;
+		text-shadow: 0 0 20px #000;
+	}
+	&_text {
+		color: #ffd200;
+		text-shadow: 0 0 20px #000;
+	}
+	&_button {
+		background: #fff;
+		color: #000;
+		text-transform: uppercase;
+	}
+}
+// Best Sellers
+.best_sellers {
+	&_slider {
+		border: 1px solid $border;
+	}
+	&_title {
+		text-transform: uppercase;
+		color: $text;
+		font-size: 18px;
+	}
+	&_img {
+		height: 200px;
+		width: 100px;
+	}
+}
+// Recent News
+.recent_news {
+	&_data {
+		background:$accent;
+		color: #ffffff;
+		text-align: center;
+		height: 50px;
+		width: 45px;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	&_month {
+		font-size: 14px;
+	}
+	&_title {
+		color: $text;
+		font-size: 16px;
+	}
+	&_fashion {
+		color: #555555;
+		font-size: 14px;
+	}
+	&_text {
+		color: $text_light;
+		font-size: 14px;
+	}
+	&_button {
+		color: $accent;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	&_img {
+		height: 220px;
+	}
 }

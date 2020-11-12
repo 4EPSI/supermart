@@ -32,7 +32,7 @@ $('.customPrevBtn').click(function() {
 });
 
 // Sidebar slider
-$('.slider_slider').owlCarousel({
+$('.sidebar_slider').owlCarousel({
     loop: true,
     margin: 0,
     nav: false,
@@ -59,4 +59,13 @@ $('.products_slider').owlCarousel({
     dots: false,
     mouseDrag: false,
     items: 4
+});
+// Best ellers slider
+$('.best_sellers_slider').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: false,
+    mouseDrag: false,
+    items: 1
 });
