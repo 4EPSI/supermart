@@ -294,19 +294,40 @@
 		text-transform: uppercase;
 	}
 }
-// Best Sellers
-.best_sellers {
-	&_slider {
-		border: 1px solid $border;
+// Products Slider Multiply
+.products_slider_multiply {
+	.prod_card_short {
+		width: 50%;
 	}
-	&_title {
+	.prod_card_rate {
+		text-align: left;
+	}
+	.prod_card_short {
+		border-bottom: 1px solid $border;
+		border-right: 1px solid $border;
+		position: relative;
+	}
+	.slider_item {
+		border-left: 1px solid #e8e8e8;
+		border-top: 1px solid #e8e8e8;
+	}
+	&_button {
 		text-transform: uppercase;
 		color: $text;
-		font-size: 18px;
+		font-size: 12px;
+		background: #fcfcfc;
+		border: 1px solid $border;
+		border-radius: 3px;
 	}
+	.prod_card_short_img {
+		height: 150px;
+		width: 150px;
+	}
+}
+// Stellar Pack
+.stellar_pack {
 	&_img {
 		height: 200px;
-		width: 100px;
 	}
 }
 // Recent News

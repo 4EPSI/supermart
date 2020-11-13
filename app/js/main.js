@@ -60,8 +60,8 @@ $('.products_slider').owlCarousel({
     mouseDrag: false,
     items: 4
 });
-// Best ellers slider
-$('.best_sellers_slider').owlCarousel({
+// Products Slider Multiply
+$('.products_slider_multiply').owlCarousel({
     loop: true,
     margin: 0,
     nav: false,
@@ -69,3 +69,4 @@ $('.best_sellers_slider').owlCarousel({
     mouseDrag: false,
     items: 1
 });
+
