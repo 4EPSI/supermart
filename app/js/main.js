@@ -69,4 +69,21 @@ $('.products_slider_multiply').owlCarousel({
     mouseDrag: false,
     items: 1
 });
-
+// Categories slider
+$('.categories_slider').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: false,
+    mouseDrag: false,
+    items: 5
+});
+// Brand Partners
+$('.brand_partners').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: false,
+    mouseDrag: false,
+    items: 6
+});
