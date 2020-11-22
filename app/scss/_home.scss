@@ -224,6 +224,13 @@
 .products_slider {
 	border: 1px solid $border;
 	border-right: none;
+	.owl-stage {
+		display: flex;
+	}
+	.owl-item,
+	.slider_item {
+		height: 100%;
+	}
 	.prod_card {
 		border-right: 1px solid $border;
 	}
@@ -420,7 +427,10 @@
 		border-right: none;
 	}
 	.slider_item {
-		border-left: 1px solid $border;
+		border-right: 1px solid $border;
+		// &:last-child {
+		// 	// border-right: none;
+		// }
 	}
 }
 // Brand Partners
