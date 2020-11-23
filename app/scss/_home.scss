@@ -425,7 +425,7 @@
 	border: 1px solid $border;
 	.owl-item {
 		border-right: 1px solid $border;
-		&.active {}
+		&.active {} //дописать условие
 	}
 }
 // Brand Partners
