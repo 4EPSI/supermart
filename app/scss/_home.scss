@@ -423,14 +423,9 @@
 // Categories Slider
 .categories_slider {
 	border: 1px solid $border;
-	&:last-child {
-		border-right: none;
-	}
-	.slider_item {
+	.owl-item {
 		border-right: 1px solid $border;
-		// &:last-child {
-		// 	// border-right: none;
-		// }
+		&.active {}
 	}
 }
 // Brand Partners
