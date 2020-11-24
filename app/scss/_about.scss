@@ -41,6 +41,8 @@
 .section_marketing {
     text-align: center;
     background: #f9f9f9;
+    height: 365px;
+    border-top: 1px solid $border;
     &_img {
         height: 80px;
         width: 80px;
@@ -55,5 +57,16 @@
     &_text {
         font-size: 14px;
         color: $text_light;
+        max-width: 280px;
+    }
+}
+// Section Rating
+.section_rating {
+    background: #d0d0d0;
+    height: 240px;
+    border-bottom: 1px solid $border;
+    &_title {
+        color: #ffffff;
+        font-size: 50px;
     }
 }
