@@ -65,8 +65,40 @@
     background: #d0d0d0;
     height: 240px;
     border-bottom: 1px solid $border;
+    text-align: center;
     &_title {
         color: #ffffff;
         font-size: 50px;
+    }
+    &_text {
+        color: #ffffff;
+        font-size: 14px;
+    }
+}
+// Workers Section
+.workers_section {
+    text-align: center;
+    &_title {
+        font-size: 24px;
+        color: $text;
+        text-transform: uppercase;
+    }
+    &_text {
+        font-size: 16px;
+        color: #777777;
+    }
+    &_img {
+        img {
+            height: 260px;
+             width: 260px;
+        }
+    }
+    &_name {
+        font-size: 14px;
+        color: $text;
+    }
+    &_position {
+        font-size: 14px;
+        color: #999999;
     }
 }
