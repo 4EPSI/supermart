@@ -96,9 +96,22 @@
     &_name {
         font-size: 14px;
         color: $text;
+        text-transform: uppercase;
     }
     &_position {
         font-size: 14px;
         color: #999999;
+    }
+    &_content {
+        border: 1px solid $border;
+        border-top: none;
+        height: 140px;
+    }
+    &_social {
+        color: #bbbbbb;
+    }
+    &_slider {
+        height: 160px;
+        background: #f9f9f9;
     }
 }
