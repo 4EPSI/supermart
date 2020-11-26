@@ -88,9 +88,11 @@
         color: #777777;
     }
     &_img {
+        height: 260px;
         img {
-            height: 260px;
-            width: 260px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
     }
     &_name {

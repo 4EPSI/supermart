@@ -60,7 +60,7 @@ input, textarea {
 textarea {
 	resize: none;
 }
-ul {
+ul, ol {
 	list-style: none;
 	margin-bottom: 0;
 }
@@ -167,4 +167,9 @@ button, .btn {
 .border_right {
 	border-right: 1px solid #ececec;
 	height: 100%;
+}
+
+// Breadcrumbs
+.breadcrumb {
+	background: none;
 }
