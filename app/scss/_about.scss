@@ -1,6 +1,6 @@
 // About Us
 .about_us {
-    background: #686868;
+    // background: #686868;
     height: 220px;
     &_text {
         text-transform: uppercase;
@@ -10,6 +10,18 @@
             color: #ffffff;
             font-size: 12px;
         }
+    }
+    &_home {
+        font-size: 18px;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: 0 0 20px #000;
+    }
+    .breadcrumb-item.active {
+        color: #fff;
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+        color: #fff;
     }
 }
 // Author Supermart
