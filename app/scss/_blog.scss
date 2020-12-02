@@ -17,6 +17,7 @@
         font-size: 14px;
         color: #555555;
         border-right: 1px solid #aaaaaa;
+        height: 12px;
         &:last-child {
             border-right: none;
         }
@@ -34,7 +35,6 @@
         text-transform: uppercase;
     }
     .recent_news_data {
-        // transform: translate(-50px, 60px);
         height: 65px;
         width: 55px;
     }
@@ -71,6 +71,43 @@
         }
         &:hover {
             color: #292929;
+        }
+    }
+    &_tags {
+        color: #777777;
+        font-size: 12px;
+        border: 1px solid $border;
+    }
+}
+.recent_posts {
+    &_text {
+        font-size: 14px;
+        color: #777777;
+        border-bottom: 1px solid $border;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &_title {
+        color: $text;
+        font-size: 16px;
+    }
+}
+// Page Switching
+.page_switching {
+    width: 100%;
+    border-top: 2px solid $border;
+    &_content {
+        font-size: 14px;
+        color: $text_secondary;
+        border: 1px solid $border;
+        height: 32px;
+        width: 32px;
+        border-radius: 3px;
+        &:hover {
+            color: #ffffff;
+            background: $text;
+            transition: all 0.3s ease;
         }
     }
 }
