@@ -143,7 +143,7 @@
         <!-- Blog_Content -->
         <div class="container">
             <div class="row">
-                <div class="col-9">
+                <div class="col-9 mb-5">
                     <div class="blog_content_img mb-4">
                         <img src="img/amazing_store.png" alt="img">
                     </div>
@@ -210,7 +210,10 @@
 
                     <div class="blog_post_trending d-flex justify-content-between mb-4 pb-3">
                         <div class=" d-flex align-items-center">
-                            <div class="blog_post_tags">Tags: <span class="blog_content_text">Apps, Clothing, Trending</span></div>
+                            <div class="blog_post_tags mr-1"><span class="blog_content_text">Apps,</span></div>
+                            <div class="blog_post_tags mr-1"><span class="blog_content_text">Clothing,</span></div>
+                            <div class="blog_post_tags mr-1"><span class="blog_content_text">Trending</span></div>
+                            <!-- <div class="blog_post_tags">Tags: <span class="blog_content_text">Apps, Clothing, Trending</span></div> -->
                         </div>
                         <div class="d-flex align-items-center">
                             <div class="blog_post_tags">Share:</div>
@@ -221,16 +224,79 @@
                         </div>
                     </div>
 
-                    <div class="">
-                        <div class="">
-                            <img src="" alt="">
+                    <!-- Section Comments -->
+                    <div class="section_comments d-flex align-items-center mb-4">
+                        <div class="section_comments_img ml-3 mr-4">
+                            <img src="img/author.png" alt="img">
                         </div>
                         <div>
-                            <div>Author: Henritch</div>
-                           <div>Edison may have been behind the invention of the electric light bulb, but he did not work alone models and companies have been forged through.</div>
+                            <div class="section_comments_title mb-2">Author: Henritch</div>
+                           <div class="section_comments_text">Edison may have been behind the invention of the electric light bulb, but he did not work alone models and companies have been forged through.</div>
                         </div>
                     </div>
 
+                    <h2 class="section_comments_comments mb-4">Comments</h2>
+
+                    <div class="section_comments_content d-flex mb-4 pb-4">
+                        <div class="section_comments_leo_img mr-3">
+                            <img src="img/leooo.png" alt="img">
+                        </div>
+                        <div>
+                            <div class="section_comments_title mb-2">Gladson</div>
+                            <div class="section_comments_text mb-2">Jun 20, 2016 at 10:38 am </div>
+                           <div class="section_comments_text mb-2">Advanced Manufacturing is creating disruption as well as opportunities for workers. This infographic expert plores the implications for the jobs of the future.</div>
+                           <a class="section_comments_button p-1 pl-3 pr-3" href="#">Reply</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-11">
+                            <div class="section_comments_content d-flex mb-4 pb-4">
+                                <div class="section_comments_leo_img mr-3">
+                                    <img src="img/leooo.png" alt="img">
+                                </div>
+                                <div>
+                                    <div class="section_comments_title mb-2">Ezesha Doe</div>
+                                    <div class="section_comments_text mb-2">Jun 20, 2016 at 10:38 am </div>
+                                   <div class="section_comments_text mb-2">Yet innovation doesn’t just bring disruption, but also opportunity.</div>
+                                   <a class="section_comments_button p-1 pl-3 pr-3" href="#">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section_comments_content d-flex mb-4 pb-4">
+                        <div class="section_comments_leo_img mr-3">
+                            <img src="img/leooo.png" alt="img">
+                        </div>
+                        <div>
+                            <div class="section_comments_title mb-2">THomoas Vendy</div>
+                            <div class="section_comments_text mb-2">Jun 20, 2016 at 10:38 am </div>
+                           <div class="section_comments_text mb-2">Muffin cookie bonbon muffin cupcake cupcake bear claw toffee. Fruitcake sweet roll sweet roll. Jelly beans marshmallow oat cake sweet roll chupa.</div>
+                           <a class="section_comments_button p-1 pl-3 pr-3" href="#">Reply</a>
+                        </div>
+                    </div>
+                    <h2 class="section_comments_comments mb-4">Leave a Comment</h2>
+                    <div class="section_comments_text mb-1">Your Comment</div>
+                    <form action="#">
+                        <textarea class="section_comments_textarea mb-2" name="your_message" required></textarea>
+                        <div class="row mb-4">
+                            <div class="col-4">
+                                <div class="contact_form_text mb-1">Name <span class="contact_form_star">*</span></div>
+                            <input class="section_comments_input" type="text" name="name" required />
+                            </div>
+                            <div class="col-4">
+                                <div class="contact_form_text mb-1">Email<span class="contact_form_star">*</span></div>
+                                <input class="section_comments_input" type="text" name="email" required />
+                            </div>
+                            <div class="col-4">
+                                <div class="contact_form_text mb-1">Website<span class="contact_form_star">*</span></div>
+                                <input class="section_comments_input" type="text" name="website" required />
+                            </div>
+                        </div>
+                        <button class="section_comments_button_button mb-5">Post comment</button>
+                    </form>
                 </div>
                 <div class="col-3">
                     <!-- // Blog content Categories -->
