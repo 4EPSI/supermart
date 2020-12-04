@@ -14,8 +14,7 @@
     }
     &_img {
         img {
-            height: 310px;
-            width: 365px;
+            height: 300px;
         }
     }
     &_tags {
@@ -52,6 +51,7 @@
         img {
             height: 100%;
             width: 100%;
+            object-fit: cover;
         }
     }
     &_comments {
