@@ -1,0 +1,81 @@
+// Shop Sidebar
+.shop_sidebar {
+    border-bottom: 1px solid $border;
+    &_title {
+        font-size: 16px;
+        color: #232323;
+        text-transform: uppercase;
+        &_goods {
+            font-size: 16px;
+            color: #444444;
+        }
+    }
+    &_home {
+        font-size: 12px;
+        color: #555555;
+        text-transform: uppercase;
+    }
+    &_showing {
+        font-size: 14px;
+        color: $text_light;
+        text-transform: uppercase;
+    }
+    &_field {
+        border: 1px solid $border;
+        border-radius: 3px;
+        color: #777777;
+        height: 35px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    &_content {
+        border: 1px solid $border;
+        position: relative;
+    }
+    &_img {
+        height: 250px;
+        width: 70%;
+        border-right: 1px solid $border;
+        position: relative;
+    }
+    &_price {
+        font-size: 14px;
+        color: $text;
+    }
+    &_text {
+        font-size: 14px;
+        color: #777777;
+    }
+    &_button {
+        text-transform: uppercase;
+        font-size: 12px;
+        height: 35px;
+        min-width: 100px;
+        &_like {
+            min-width: 30px;
+            height: 35px;
+            border: 1px solid $border;
+            background: #fcfcfc;
+            color: $text;
+        }
+    }
+    &_star {
+        .prod_card_rate {
+            text-align: inherit;
+        }
+    }
+}
+// Default Sorting
+.default_sorting {
+    cursor: pointer;
+    border: 1px solid $border;
+    height: 35px;
+    width: 35px;
+    &:last-child {
+        border-left: none;
+    }
+    &:hover,
+    &.active {
+        background: #f5f5f5;
+    }
+}
