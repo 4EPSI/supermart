@@ -131,7 +131,7 @@
 		<!--Shop Sidebar  -->
             <div class="container mb-5">
                 <div class="shop_sidebar d-flex justify-content-between align-items-center">
-                    <div class="shop_sidebar_title">Shop Sidebar List</div>
+                    <h2 class="shop_sidebar_title">Shop Sidebar List</h2>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a class="shop_sidebar_home" href="/">Home</a></li>
                         <li class="breadcrumb-item active shop_sidebar_home">Shop /</li>
@@ -146,23 +146,21 @@
                         <div class=" d-flex align-items-center justify-content-between mb-3">
                             <div class="shop_sidebar_showing">Showing 1-16 of 24 Products</div>
                             <div class="mb-4 d-flex">
-                                <div class="dropdown search_form_categories mr-2">
-                                    <div class="shop_sidebar_field dropdown-toggle pr-3 pl-3 d-flex align-items-center"
-                                        id="numbering" data-toggle="dropdown">8</div>
+                                <div class="dropdown d_select">
+                                    <div class="shop_sidebar_item menu_item_drop dropdown-toggle d-flex align-items-center justify-content-center mr-2 pl-2 pr-2" id="numbering" data-toggle="dropdown">8</div>
                                     <div class="dropdown-menu" aria-labelledby="numbering">
                                         <ul>
+                                            <li class="dropdown-item">8</li>
                                             <li class="dropdown-item">9</li>
-                                            <li class="dropdown-item">10</li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="dropdown search_form_categories mr-2">
-                                    <div class="shop_sidebar_field dropdown-toggle pr-3 pl-3 d-flex align-items-center"
-                                        id="default_sorting" data-toggle="dropdown">Default Sorting</div>
+                                <div class="dropdown d_select">
+                                    <div class="shop_sidebar_item menu_item_drop dropdown-toggle d-flex justify-content-center align-items-center mr-2 pr-2 pl-2" id="default_sorting" data-toggle="dropdown">Default Sorting</div>
                                     <div class="dropdown-menu" aria-labelledby="default_sorting">
                                         <ul>
-                                            <li class="dropdown-item">9</li>
-                                            <li class="dropdown-item">10</li>
+                                            <li class="dropdown-item">Default Sorting</li>
+                                            <li class="dropdown-item">bla bla bla</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -172,9 +170,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="shop_sidebar_content d-flex">
+                        <div class="shop_sidebar_content d-flex mb-4">
                             <div class="prod_card_label sale pt-1 pb-1 pl-2 pr-2">Sale</div>
-                            <div class="shop_sidebar_img d-flex align-items-center justify-content-center p-1">
+                            <div class="shop_sidebar_img prod_card d-flex align-items-center justify-content-center p-1">
                                 <img src="img/philips.webp" alt="img">
                                 <div class="prod_card_actions d-flex">
                                     <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
@@ -209,30 +207,10 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- <div class="prod_card_short d-flex align-items-center p-3">
-                            <div class="prod_card_short_img mr-2 d-flex align-items-center justify-content-center">
-                                <div class="prod_card_label sale pt-1 pb-1 pl-2 pr-2">Sale</div>
-                                <img src="img/eagle.svg" alt="img">
-                            </div>
-                            <div>
-                                <a href="#" class="prod_card_short_title">Yunique Plus Hair Styler</a>
-                                <div class="prod_card_short_price mb-1">$56.00</div>
-                                <div class="prod_card_rate mb-3">
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <a class="products_slider_multiply_button p-2 pr-4" href="#">Selcect options</a>
-                            </div>
-                        </div> -->
-
-                        <!-- <div class="prod_card d-flex flex-column">
+                        <div class="shop_sidebar_content d-flex mb-4">
                             <div class="prod_card_label sale pt-1 pb-1 pl-2 pr-2">Sale</div>
-                            <div class="prod_card_img d-flex align-items-center justify-content-center mb-3">
-                                <img src="img/sloven.jpg" alt="img">
+                            <div class="shop_sidebar_img prod_card d-flex align-items-center justify-content-center p-1">
+                                <img src="img/plastic_steel_flask.jpg" alt="img">
                                 <div class="prod_card_actions d-flex">
                                     <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
                                         <i class="fas fa-shopping-cart"></i>
@@ -248,16 +226,251 @@
                                     </a>
                                 </div>
                             </div>
-                            <a class="prod_card_title d-flex justify-content-center" href="#">Slooven Stripped T-shirt</a>
-                            <div class="prod_card_price mb-2">$99.00</div>
-                            <div class="prod_card_rate mb-2">
-                                <i class="fas fa-star active"></i>
-                                <i class="fas fa-star active"></i>
-                                <i class="fas fa-star active"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                            <div class="shop_sidebar_star ml-3 d-flex flex-column justify-content-center">
+                                <a class="shop_sidebar_title_goods" href="#">Halogen Room Handwear</a>
+                                <div class="shop_sidebar_price">$155.00</div>
+                                <div class="prod_card_rate mb-3">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="shop_sidebar_text mb-3">There are many variations of passages of Lorem Ipsum availablethe majority have suffered alteration in some form by injected humour or randomised words which don't look even slightly believable...</div>
+                                <div class="d-flex align-items-center">
+                                    <button class="shop_sidebar_button mr-2">Add to cart</button>
+                                    <button class="shop_sidebar_button_like mr-2"><i class="far fa-heart"></i></button>
+                                    <button class="shop_sidebar_button_like mr-2"><i class="fas fa-exchange-alt"></i></button>
+                                </div>
                             </div>
-                        </div> -->
+                        </div>
+                        <div class="shop_sidebar_content d-flex mb-4">
+                            <div class="shop_sidebar_img prod_card d-flex align-items-center justify-content-center p-1">
+                                <img src="img/philips.webp" alt="img">
+                                <div class="prod_card_actions d-flex">
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="far fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shop_sidebar_star ml-3 d-flex flex-column justify-content-center">
+                                <a class="shop_sidebar_title_goods" href="#">Active Shave Lotion 100 ml</a>
+                                <div class="shop_sidebar_price">$77.00</div>
+                                <div class="prod_card_rate mb-3">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="shop_sidebar_text mb-3">There are many variations of passages of Lorem Ipsum availablethe majority have suffered alteration in some form by injected humour or randomised words which don't look even slightly believable...</div>
+                                <div class="d-flex align-items-center">
+                                    <button class="shop_sidebar_button mr-2">Add to cart</button>
+                                    <button class="shop_sidebar_button_like mr-2"><i class="far fa-heart"></i></button>
+                                    <button class="shop_sidebar_button_like mr-2"><i class="fas fa-exchange-alt"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop_sidebar_content d-flex mb-4">
+                            <div class="prod_card_label new pt-1 pb-1 pl-2 pr-2">New</div>
+                            <div class="shop_sidebar_img prod_card d-flex align-items-center justify-content-center p-1">
+                                <img src="img/philips.webp" alt="img">
+                                <div class="prod_card_actions d-flex">
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="far fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shop_sidebar_star ml-3 d-flex flex-column justify-content-center">
+                                <a class="shop_sidebar_title_goods" href="#">Slooven Stripped T-shirt</a>
+                                <div class="shop_sidebar_price">$99.00</div>
+                                <div class="prod_card_rate mb-3">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="shop_sidebar_text mb-3">There are many variations of passages of Lorem Ipsum availablethe majority have suffered alteration in some form by injected humour or randomised words which don't look even slightly believable...</div>
+                                <div class="d-flex align-items-center">
+                                    <button class="shop_sidebar_button mr-2">Add to cart</button>
+                                    <button class="shop_sidebar_button_like mr-2"><i class="far fa-heart"></i></button>
+                                    <button class="shop_sidebar_button_like mr-2"><i class="fas fa-exchange-alt"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop_sidebar_content d-flex mb-4">
+                            <div class="shop_sidebar_img prod_card d-flex align-items-center justify-content-center p-1">
+                                <img src="img/philips.webp" alt="img">
+                                <div class="prod_card_actions d-flex">
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="far fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shop_sidebar_star ml-3 d-flex flex-column justify-content-center">
+                                <a class="shop_sidebar_title_goods" href="#">Microsoft Lumia U169</a>
+                                <div class="shop_sidebar_price">$499.00</div>
+                                <div class="prod_card_rate mb-3">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="shop_sidebar_text mb-3">There are many variations of passages of Lorem Ipsum availablethe majority have suffered alteration in some form by injected humour or randomised words which don't look even slightly believable...</div>
+                                <div class="d-flex align-items-center">
+                                    <button class="shop_sidebar_button mr-2">Add to cart</button>
+                                    <button class="shop_sidebar_button_like mr-2"><i class="far fa-heart"></i></button>
+                                    <button class="shop_sidebar_button_like mr-2"><i class="fas fa-exchange-alt"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop_sidebar_content d-flex mb-4">
+                            <div class="prod_card_label sale pt-1 pb-1 pl-2 pr-2">Sale</div>
+                            <div class="shop_sidebar_img prod_card d-flex align-items-center justify-content-center p-1">
+                                <img src="img/philips.webp" alt="img">
+                                <div class="prod_card_actions d-flex">
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="far fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shop_sidebar_star ml-3 d-flex flex-column justify-content-center">
+                                <a class="shop_sidebar_title_goods" href="#">Zexon Brand Men’s watch</a>
+                                <div class="shop_sidebar_price">$199.00</div>
+                                <div class="prod_card_rate mb-3">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="shop_sidebar_text mb-3">There are many variations of passages of Lorem Ipsum availablethe majority have suffered alteration in some form by injected humour or randomised words which don't look even slightly believable...</div>
+                                <div class="d-flex align-items-center">
+                                    <button class="shop_sidebar_button mr-2">Add to cart</button>
+                                    <button class="shop_sidebar_button_like mr-2"><i class="far fa-heart"></i></button>
+                                    <button class="shop_sidebar_button_like mr-2"><i class="fas fa-exchange-alt"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop_sidebar_content d-flex mb-4">
+                            <div class="prod_card_label new pt-1 pb-1 pl-2 pr-2">New</div>
+                            <div class="shop_sidebar_img prod_card d-flex align-items-center justify-content-center p-1">
+                                <img src="img/philips.webp" alt="img">
+                                <div class="prod_card_actions d-flex">
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="far fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shop_sidebar_star ml-3 d-flex flex-column justify-content-center">
+                                <a class="shop_sidebar_title_goods" href="#">Plastic Steel Flask(750ml)</a>
+                                <div class="shop_sidebar_price">$55.00</div>
+                                <div class="prod_card_rate mb-3">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="shop_sidebar_text mb-3">There are many variations of passages of Lorem Ipsum availablethe majority have suffered alteration in some form by injected humour or randomised words which don't look even slightly believable...</div>
+                                <div class="d-flex align-items-center">
+                                    <button class="shop_sidebar_button mr-2">Add to cart</button>
+                                    <button class="shop_sidebar_button_like mr-2"><i class="far fa-heart"></i></button>
+                                    <button class="shop_sidebar_button_like mr-2"><i class="fas fa-exchange-alt"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop_sidebar_content d-flex mb-4">
+                            <div class="shop_sidebar_img prod_card d-flex align-items-center justify-content-center p-1">
+                                <img src="img/philips.webp" alt="img">
+                                <div class="prod_card_actions d-flex">
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </a>
+                                    <a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+                                        <i class="far fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shop_sidebar_star ml-3 d-flex flex-column justify-content-center">
+                                <a class="shop_sidebar_title_goods" href="#">Yoshwanth Real Honey</a>
+                                <div class="shop_sidebar_price">$34.00</div>
+                                <div class="prod_card_rate mb-3">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="shop_sidebar_text mb-3">There are many variations of passages of Lorem Ipsum availablethe majority have suffered alteration in some form by injected humour or randomised words which don't look even slightly believable...</div>
+                                <div class="d-flex align-items-center">
+                                    <button class="shop_sidebar_button mr-2">Add to cart</button>
+                                    <button class="shop_sidebar_button_like mr-2"><i class="far fa-heart"></i></button>
+                                    <button class="shop_sidebar_button_like mr-2"><i class="fas fa-exchange-alt"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Page Switching -->
+                         <div class="d-flex justify-content-center pt-4 mb-5">
+                            <a class="page_switching_content d-flex justify-content-center align-items-center mr-2" href="#"><</a>
+                            <a class="page_switching_content d-flex justify-content-center align-items-center mr-2" href="#">1</a>
+                            <a class="page_switching_content active d-flex justify-content-center align-items-center mr-2" href="#">2</a>
+                            <a class="page_switching_content d-flex justify-content-center align-items-center mr-2" href="#">3</a>
+                            <a class="page_switching_content d-flex justify-content-center align-items-center mr-2" href="#">></a>
+                        </div>
                     </div>
                 </div>
             </div>

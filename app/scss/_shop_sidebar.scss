@@ -20,7 +20,7 @@
         color: $text_light;
         text-transform: uppercase;
     }
-    &_field {
+    &_item {
         border: 1px solid $border;
         border-radius: 3px;
         color: #777777;
@@ -37,6 +37,9 @@
         width: 70%;
         border-right: 1px solid $border;
         position: relative;
+        .prod_card_actions {
+            border-bottom: none;
+        }
     }
     &_price {
         font-size: 14px;
