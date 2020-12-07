@@ -96,3 +96,23 @@
         }
     }
 }
+// Article Content
+.article_content {
+    font-size: 14px;
+    color: #777;
+    img {
+        width: 50%;
+        float: right;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+    &_item {
+        font-size: 16px;
+        color: #333333;
+        border-left: 2px solid #232323;
+    }
+    &_title {
+        font-size: 22px;
+        color: $text;
+    }
+}
