@@ -118,9 +118,9 @@
 }
 .color {
     &_content {
-        background: #000;
         height: 25px;
         width: 25px;
+        background: #000;
     }
     &_blue {
         background: #34aadc;
@@ -129,6 +129,41 @@
     }
     &_carmine {
         background: #b0865b;
+        height: 25px;
+        width: 25px;
+    }
+    &_light_amber {
+        background: #f7e6a1;
+        height: 25px;
+        width: 25px;
+    }
+    &_light_gray {
+        background: #969495;
+        height: 25px;
+        width: 25px;
+    }
+    &_light_green {
+        background: #26dc2b;
+        height: 25px;
+        width: 25px;
+    }
+    &_light_orange {
+        background: #fd8603;
+        height: 25px;
+        width: 25px;
+    }
+    &_light_gray {
+        background: #969495;
+        height: 25px;
+        width: 25px;
+    }
+    &_light_pink {
+        background: #f678b0;
+        height: 25px;
+        width: 25px;
+    }
+    &_gold {
+        background: #f1f03f;
         height: 25px;
         width: 25px;
     }

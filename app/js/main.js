@@ -101,22 +101,52 @@ $('.brand_partners').owlCarousel({
     items: 6
 });
 
+var countDate = new Date('December 31, 2020 24:00:00').getTime();
+
+function newYear(){
+    var now = new Date().getTime();
+        gap = countDate - now;
+
+        var second = 1000;
+        var minute = second * 60;
+        var hour = minute * 60;
+        var day = hour * 24;
+
+    if (gap < 0) {
+        document.getElementById('group').innerText = 'promotion ended';
+    }else{
+
+        var d = Math.floor(gap / (day));
+        var h = Math.floor((gap % (day)) / (hour));
+        var m = Math.floor((gap % (hour)) / (minute));
+        var s = Math.floor((gap % (minute)) / second);
+
+        document.getElementById('day').innerText = d;
+        document.getElementById('hours').innerText = h;
+        document.getElementById('minute').innerText = m;
+        document.getElementById('second').innerText = s;
+}}
+
+setInterval(function(){
+    newYear();
+},1000)
+
 // Counter
-$("#getting-started")
-.countdown("2020/12/31", function(event) {
-  $('#day').text(
-    event.strftime('%D')
-  );
-  $('#hours').text(
-      event.strftime('%H')
-    );
-    $('#minutes').text(
-      event.strftime('%M')
-    );
-    $('#seconds').text(
-      event.strftime('%S')
-    );
-});
+// $("#getting-started")
+// .countdown("2020/12/31", function(event) {
+//   $('#day').text(
+//     event.strftime('%D')
+//   );
+//   $('#hours').text(
+//       event.strftime('%H')
+//     );
+//     $('#minutes').text(
+//       event.strftime('%M')
+//     );
+//     $('#seconds').text(
+//       event.strftime('%S')
+//     );
+// });
 // function getTimeRemaining(endtime) {
 //     var t = Date.parse(endtime) - Date.parse(new Date());
 //     var seconds = Math.floor((t / 1000) % 60);
