@@ -131,6 +131,18 @@ setInterval(function(){
     newYear();
 },1000)
 
+// Prop view
+$('.default_sorting').on('click', function(){
+    $('.default_sorting').removeClass('active');
+    $(this).addClass('active');
+    $('.products_list').removeClass('active');
+    if ($(this).hasClass('list')) {
+        $('.products_list.list').addClass('active');
+    } else {
+        $('.products_list.grid').addClass('active');
+    }
+});
+
 // Counter
 // $("#getting-started")
 // .countdown("2020/12/31", function(event) {
