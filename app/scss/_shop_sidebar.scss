@@ -40,6 +40,10 @@
         .prod_card_actions {
             border-bottom: none;
         }
+        &_grid {
+            height: 350px;
+            width: 100%;
+        }
     }
     &_price {
         font-size: 14px;
@@ -104,6 +108,7 @@
     }
     &_list {
         padding-left: 16px;
+        padding-right: 16px;
         color: $text;
     }
     &_title {
@@ -117,55 +122,43 @@
     }
 }
 .color {
-    &_content {
-        height: 25px;
-        width: 25px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    @extend.animate;
+    &:hover,
+    &.active {
+        box-shadow: 0 0 0 3px $accent;
+    }
+    &.black {
         background: #000;
     }
-    &_blue {
+    &.blue {
         background: #34aadc;
-        height: 25px;
-        width: 25px;
     }
-    &_carmine {
+    &.carmine {
         background: #b0865b;
-        height: 25px;
-        width: 25px;
     }
-    &_light_amber {
+    &.light_amber {
         background: #f7e6a1;
-        height: 25px;
-        width: 25px;
     }
-    &_light_gray {
+    &.light_gray {
         background: #969495;
-        height: 25px;
-        width: 25px;
     }
-    &_light_green {
+    &.light_green {
         background: #26dc2b;
-        height: 25px;
-        width: 25px;
     }
-    &_light_orange {
+    &.light_orange {
         background: #fd8603;
-        height: 25px;
-        width: 25px;
     }
-    &_light_gray {
+    &.light_gray {
         background: #969495;
-        height: 25px;
-        width: 25px;
     }
-    &_light_pink {
+    &.light_pink {
         background: #f678b0;
-        height: 25px;
-        width: 25px;
     }
-    &_gold {
+    &.gold {
         background: #f1f03f;
-        height: 25px;
-        width: 25px;
     }
 }
 .products_list {

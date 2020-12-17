@@ -113,23 +113,21 @@ function newYear(){
         var day = hour * 24;
 
     if (gap < 0) {
-        document.getElementById('group').innerText = 'promotion ended';
-    }else{
-
+       $('.counter_group').text('promotion ended');
+    } else {
         var d = Math.floor(gap / (day));
         var h = Math.floor((gap % (day)) / (hour));
         var m = Math.floor((gap % (hour)) / (minute));
         var s = Math.floor((gap % (minute)) / second);
-
-        document.getElementById('day').innerText = d;
-        document.getElementById('hours').innerText = h;
-        document.getElementById('minute').innerText = m;
-        document.getElementById('second').innerText = s;
+        $('.counter_day').text(d);
+        $('.counter_hours').text(h);
+        $('.counter_minute').text(m);
+        $('.counter_second').text(s);
 }}
 
-setInterval(function(){
+setInterval( function() {
     newYear();
-},1000)
+}, 1000)
 
 // Prop view
 $('.default_sorting').on('click', function(){
@@ -142,6 +140,17 @@ $('.default_sorting').on('click', function(){
         $('.products_list.grid').addClass('active');
     }
 });
+// Color
+$('.color').on('click', function(){
+    $(this).toggleClass('active');
+});
+
+
+
+
+
+
+
 
 // Counter
 // $("#getting-started")
