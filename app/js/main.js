@@ -140,9 +140,33 @@ $('.default_sorting').on('click', function(){
         $('.products_list.grid').addClass('active');
     }
 });
+
 // Color
 $('.color').on('click', function(){
     $(this).toggleClass('active');
+});
+
+// Product slider
+$('.product_slider').sliderPro({
+	width: '100%',
+	height: 500,
+	arrows: true,
+	buttons: false,
+	waitForLayers: true,
+	fade: false,
+	autoplay: false,
+	autoScaleLayers: false,
+	fullScreen: true,
+	thumbnailArrows: true,
+	imageScaleMode: 'contain',
+	breakpoints: {
+		992: {
+			height: 500,
+		},
+		768: {
+			height: 300,
+		}
+	}
 });
 
 

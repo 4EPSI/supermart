@@ -1,0 +1,57 @@
+// Checkout
+.checkout {
+    &_title {
+        font-size: 30px;
+        color: #232323;
+    }
+    &_star {
+        text-align: left;
+    }
+    &_customer {
+        color: #777777;
+    }
+    &_price {
+        font-size: 20px;
+        color: $text;
+    }
+    &_text {
+        font-size: 14px;
+        color: #777777;
+    }
+    &_content {
+        height: 75px;
+        width: 350px;
+        background: #fdfdfd;
+        border: 1px solid $border;
+    }
+    &_dot {
+        height: 5px;
+        width: 5px;
+        background: $accent;
+        border-radius: 100px;
+    }
+    &_service {
+        color: $text;
+        font-size: 14px;
+    }
+}
+.sp-slides-container,
+.sp-thumbnail-container {
+    border: 1px solid $border;
+}
+.sp-next-arrow:after,
+.sp-next-arrow:before,
+.sp-previous-arrow:after,
+.sp-previous-arrow:before {
+    background: black;
+}
+.sp-full-screen-button {
+    top: 450px;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    border: 1px solid $border;
+}
