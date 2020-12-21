@@ -169,6 +169,40 @@ $('.product_slider').sliderPro({
 	}
 });
 
+// Product quantity
+$(".ddd").on("click", function () {
+
+    var $button = $(this),
+        $input = $button.closest('.sp-quantity').find("input.quntity-input");
+    var oldValue = $input.val(),
+        newVal;
+
+    if ($.trim($button.text()) == "+") {
+        newVal = parseFloat(oldValue) + 1;
+    } else {
+        // Don't allow decrementing below zero
+        if (oldValue > 0) {
+            newVal = parseFloat(oldValue) - 1;
+        } else {
+            newVal = 0;
+        }
+    }
+
+    $input.val(newVal);
+
+});
+
+$('.product_field_btn').on('click', function(){
+    var prod_qty = parseInt($(this).closest('.product_field').find('.product_field_input').val());
+
+    if (prod_qty >= 0) {
+        prod_qty = prod_qty++;
+        $(this).closest('.product_field').find('.product_field_input').val(prod_qty);
+        console.log(prod_qty);
+    } else {
+        console.log('remove');
+    }
+});
 
 
 
