@@ -158,7 +158,9 @@ $('.product_slider').sliderPro({
 	autoScaleLayers: false,
 	fullScreen: true,
 	thumbnailArrows: true,
-	imageScaleMode: 'contain',
+    imageScaleMode: 'contain',
+    thumbnailWidth: 130,
+	thumbnailHeight: 130,
 	breakpoints: {
 		992: {
 			height: 500,
@@ -204,6 +206,8 @@ $('.product_field_btn').on('click', function(){
     }
 });
 
+// Tooltip
+$('[data-toggle="tooltip"]').tooltip();
 
 
 

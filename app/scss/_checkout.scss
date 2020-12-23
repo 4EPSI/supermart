@@ -35,7 +35,73 @@
         font-size: 14px;
     }
     &_button {
-
+        background: $text;
+        font-size: 12px;
+        height: 50px;
+        // width: 200px;
+        width: 150px;
+        border: none;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+    &_shopping {
+        // background: $text;
+        // color: #fff;
+        height: 50px;
+        width: 50px;
+        // min-width: 50px;
+        // border: none;
+        border-left: 1px solid #424242;
+        // border-radius: 0px 3px 3px 0px;
+        // &:hover {
+        //     background: $text;
+        // }
+    }
+    &_btn {
+        border: 1px solid $border;
+        .shop_sidebar_button_like {
+            height: 50px;
+            border-radius: 0;
+            border: none;
+            border-right: 1px solid $border;
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+    &_line {
+        border-bottom: 1px solid $border;
+    }
+    &_social {
+        color: $accent;
+        font-size: 14px;
+        border: 1px solid $border;
+        height: 25px;
+        width: 65px;
+        border-radius: 3px;
+        // text-align: center;
+        &.red {
+            color: #c83536;
+        }
+        &_text {
+            color: #555555;
+        }
+        &.soc {
+            color: $text;
+            position: relative;
+            width: 40px;
+            // &:before {
+            //     content: "";
+            //     position: absolute;
+            //     right: 100%;
+            //     top: 50%;
+            //     transform: translateY(-50%);
+            //     // border: 5px solid transparent;
+            //     // border-right: 5px solid $border;
+            //     border: 5px solid  $border;
+            //     border-right: 5px solid #fff;
+            // }
+        }
     }
 }
 // .sp-slides-container,
@@ -88,6 +154,7 @@
     border-right:1px solid $border;
     // float:left;
     text-align:center;
+    cursor: pointer;
 }
 .sp-input {
     width:55px;
@@ -103,6 +170,7 @@
     border-left:0px solid $border;
     // float:left;
     text-align:center;
+    cursor: pointer;
 }
 .sp-input input {
     width:100%;

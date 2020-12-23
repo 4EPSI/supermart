@@ -170,10 +170,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="sp-slide">
-                            <img class="sp-image" src="img/dark-origins-butylka-stakan.jpg"/>
-                            <p class="sp-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
                     </div>
                     <div class="col-6">
                         <h2 class="checkout_title">Driller Tool Kit-S114</h2>
@@ -199,7 +195,7 @@
                                 </div>
                             </div>
                         </div>
-                        <form action="#">
+                        <form action="#" class="mb-4">
                             <div class="sp-quantity d-flex align-items-center mb-3">
                                 <div class="sp-input">
                                     <input type="text" class="quntity-input" value="1">
@@ -231,17 +227,83 @@
                                 <div class="checkout_service ml-3">$36.00</div>
                             </div>
                             <div class=" d-flex align-items-center">
-                                <button class="checkout_button">Add to cart</button>
-                                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                <button class="checkout_button">Add to cart <i class="fas fa-shopping-cart checkout_shopping d-flex align-items-center justify-content-center"></i></button>
+                                <!-- <button class="checkout_shopping d-flex align-items-center justify-content-center mr-3"></button> -->
+                                <!-- <a class="checkout_shopping d-flex align-items-center justify-content-center mr-3" href="#"><i class="fas fa-shopping-cart"></i></a> -->
+                                <div class="checkout_btn d-flex align-items-center">
+                                    <button class="shop_sidebar_button_like" data-toggle="tooltip" data-placement="top" title="Add to favorite"><i class="far fa-heart"></i></button>
+                                    <button class="shop_sidebar_button_like"><i class="fas fa-exchange-alt"></i></button>
+                                </div>
                             </div>
                         </form>
-                        <form action="#" class="product_form">
+                        <div class="checkout_line mb-3"></div>
+                        <div class="checkout_service">SKU:<span class="checkout_text ml-1">017</span></div>
+                        <div class="checkout_service">Category:<span class="checkout_text ml-1">Outerwear, Hoodies</span></div>
+                        <div class="checkout_service mb-3">Tags:<span class="checkout_text ml-1">Clothing, Mens</span></div>
+                        <div class="checkout_line mb-3"></div>
+                        <!-- <form action="#" class="product_form">
                             <div class="product_field">
                                 <input class="product_field_input" type="text" value="1">
                                 <div class="product_field_btn add">+</div>
                                 <div  class="product_field_btn remove">-</div>
                             </div>
-                        </form>
+                        </form> -->
+                        <div class=" d-flex align-items-center mb-3">
+                            <div class="checkout_service mr-3">Share:</div>
+
+                            <a class="checkout_social d-flex align-items-center justify-content-center ml-1" href="#" data-toggle="tooltip" data-placement="right" title="+555">
+                                <i class="fab fa-facebook-f mr-1"></i>
+                                <span class="checkout_social_text ml-1">Share</span>
+                            </a>
+
+                            <a class="checkout_social d-flex align-items-center justify-content-center ml-1" href="#" data-toggle="tooltip" data-placement="right" title="+777">
+                                <i class="fab fa-twitter"></i>
+                                <span class="checkout_social_text ml-1">Tweet</span>
+                            </a>
+
+                            <a class="checkout_social d-flex align-items-center red justify-content-center ml-1" href="#" data-toggle="tooltip" data-placement="right" title="+888">
+                                <i class="fab fa-pinterest-p "></i>
+                                <span class="checkout_social_text ml-1">Pin it</span></i>
+                            </a>
+
+                            <a class="checkout_social soc d-flex align-items-center justify-content-center ml-1" href="#" class="d-flex align-items-center justify-content-center">+521</a>
+                            <!-- <a href="#"><i class="fab fa-pinterest-p red m-1 checkout_social d-flex align-items-center justify-content-center"><span class="checkout_social_text ml-1">Pin it</span></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div>
+                            <div class=""><span class=" active">Description</span></div>
+                            <div class=""><span>Customer Review</span></div>
+                            <div class=""><span>Additional Information</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <ul class="nav nav-tabs d-flex flex-column mr-4">
+                            <li class="active"><a href="#all" data-toggle="tab" aria-expanded="false">All</a></li>
+                            <li><a href="#women" data-toggle="tab" aria-expanded="false">Women</a></li>
+                            <li><a href="#men" data-toggle="tab" aria-expanded="false">Men</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-9">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="all">
+                                all
+                            </div>
+                            <div class="tab-pane fade" id="women">
+                                Women
+                            </div>
+                            <div class="tab-pane fade" id="men">
+                                men
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
