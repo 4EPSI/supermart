@@ -38,8 +38,8 @@
         background: $text;
         font-size: 12px;
         height: 50px;
-        // width: 200px;
-        width: 150px;
+        width: 200px;
+        // width: 150px;
         border: none;
         border-radius: 3px;
         text-transform: uppercase;
@@ -48,7 +48,7 @@
         // background: $text;
         // color: #fff;
         height: 50px;
-        width: 50px;
+        // width: 50px;
         // min-width: 50px;
         // border: none;
         border-left: 1px solid #424242;
@@ -90,28 +90,63 @@
             color: $text;
             position: relative;
             width: 40px;
-            // &:before {
-            //     content: "";
-            //     position: absolute;
-            //     right: 100%;
-            //     top: 50%;
-            //     transform: translateY(-50%);
-            //     // border: 5px solid transparent;
-            //     // border-right: 5px solid $border;
-            //     border: 5px solid  $border;
-            //     border-right: 5px solid #fff;
-            // }
         }
     }
+    &_tab {
+        color: $text;
+        text-transform: uppercase;
+        font-size: 18px;
+        width: 100%;
+        display: block;
+        white-space: nowrap;
+        font-size: 12px;
+        border: 1px solid $border;
+        border-right: none;
+        border-bottom: none;
+        position: relative;
+        &.active {
+            border-right: 1px solid #fff;
+            border-left: 3px solid $accent;
+        }
+        &:last-of-type {
+            border-bottom: 1px solid $border;
+        }
+        &_content {
+            border: 1px solid $border;
+            border-radius: 3px;
+            width: 100%;
+        }
+        &_star {
+            .prod_card_rate {
+                text-align: left;
+            }
+        }
+
+    }
+    &_img {
+        height: 50px;
+        width: 50px;
+        img {
+            border-radius: 3px;
+        }
+    }
+    &_form {
+        .section_comments_textarea {
+            height: 120px;
+        }
+    }
+    &_described {
+        border-bottom: 1px dashed $border;
+    }
+    // &_information {
+    //     border-bottom: 1px solid $border;
+    // }
 }
-// .sp-slides-container,
-// .sp-thumbnail-container {
-//     border: 1px solid $border;
-// }
-// .sp-thumbnail-container,
-// .sp-selected-thumbnail {
-//     border: 1px solid;
-// }
+//nav tab
+.nav-tabs {
+    border-bottom: none;
+    margin-right: -1px;
+}
 .sp-thumbnail-container {
     border: 1px solid $border;
 }
@@ -127,17 +162,7 @@
 .sp-previous-thumbnail-arrow:before {
     background: black;
 }
-// .sp-full-screen-button {
-//     top: 0;
-//     bottom: 130px;
-//     border-radius: 50%;
-//     height: 35px;
-//     width: 35px;
-//     display: flex;
-//     justify-content: center;
-//     // align-items: center;
-//     border: 1px solid $border;
-// }
+
 .sp-mask {
     border: 1px solid $border;
 }
@@ -189,4 +214,8 @@
     width: 100%;
     height: 100%;
     // padding-top: 5px;
+}
+
+.tab_content {
+    border: 1px solid $border;
 }

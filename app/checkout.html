@@ -227,12 +227,12 @@
                                 <div class="checkout_service ml-3">$36.00</div>
                             </div>
                             <div class=" d-flex align-items-center">
-                                <button class="checkout_button">Add to cart <i class="fas fa-shopping-cart checkout_shopping d-flex align-items-center justify-content-center"></i></button>
+                                <button class="checkout_button mr-3">Add to cart <i class="fas fa-shopping-cart checkout_shopping ml-5 pl-3 d-flex align-items-center justify-content-center"></i></button>
                                 <!-- <button class="checkout_shopping d-flex align-items-center justify-content-center mr-3"></button> -->
                                 <!-- <a class="checkout_shopping d-flex align-items-center justify-content-center mr-3" href="#"><i class="fas fa-shopping-cart"></i></a> -->
                                 <div class="checkout_btn d-flex align-items-center">
                                     <button class="shop_sidebar_button_like" data-toggle="tooltip" data-placement="top" title="Add to favorite"><i class="far fa-heart"></i></button>
-                                    <button class="shop_sidebar_button_like"><i class="fas fa-exchange-alt"></i></button>
+                                    <button class="shop_sidebar_button_like" data-toggle="tooltip" data-placement="top" title="following"><i class="fas fa-exchange-alt"></i></button>
                                 </div>
                             </div>
                         </form>
@@ -272,38 +272,384 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="col-3">
-                        <div>
-                            <div class=""><span class=" active">Description</span></div>
-                            <div class=""><span>Customer Review</span></div>
-                            <div class=""><span>Additional Information</span></div>
+            <div class="container mb-4 d-flex">
+                <div class="nav nav-tabs d-flex flex-column flex-shrink-0">
+                    <a class="checkout_tab p-2 active tab" href="#all" data-toggle="tab" aria-expanded="false">Description</a>
+                    <a class="checkout_tab p-2 tab" href="#customer_review" data-toggle="tab" aria-expanded="false">Customer Review</a>
+                    <a class="checkout_tab p-2 tab" href="#additional_information" data-toggle="tab" aria-expanded="false">Additional Information</a>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane tab_content p-3 fade show active" id="all">
+                        <h2 class="">Reviews for Microchip Package</h2>
+                        <div class="checkout_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use asses
+                            passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All there Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true gen erator on the Internet. It uses a dictionary of over 200 Latin word.</div>
+                    </div>
+                    <div class="tab-pane tab_content p-3 fade" id="customer_review">
+                        <h2 class="checkout_tab_title">Reviews for Microchip Package</h2>
+                        <div class="d-flex mb-3">
+                            <div class="checkout_img mr-3">
+                                <img src="img/jolie.jpg" alt="img">
+                            </div>
+                            <div class="checkout_tab_content p-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="checkout_service">Cobus Bester –<span class="checkout_text">June 7, 2016</span></div>
+                                    <div class="prod_card_rate mb-3">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="checkout_text">You only get the picture, not the person holding it, something they don’t mention in the description, now I’ve got to find my own person.</div>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="checkout_img mr-3">
+                                <img src="img/jolie.jpg" alt="img">
+                            </div>
+                            <div class="checkout_tab_content p-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="checkout_service">Maria Sun -<span class="checkout_text">June 7, 2016</span></div>
+                                    <div class="prod_card_rate mb-3">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="checkout_text">This is a fantastic quality print and is happily hanging framed on my wall now.</div>
+                            </div>
+                        </div>
+                        <h2 class="checkout_tab_title">Add a Review</h2>
+                        <div class="checkout_text mb-2">Your email address will not be published. Required fields are marked <span class="contact_form_star">*</span></div>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="checkout_text mb-3">Your Rating</div>
+                                    <div class="checkout_text">Your Review<span class="contact_form_star">*</span></div>
+                                </div>
+                                <div class="col-10 checkout_tab_star">
+                                    <div class="prod_card_rate checkout_tab_star mb-3">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <textarea class="section_comments_textarea mb-2" name="your_message" required></textarea>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <div class="checkout_text">Name<span class="contact_form_star">*</span></div>
+                                </div>
+                                <div class="col-10 mb-3">
+                                    <input class="section_comments_input" type="text" name="name" required />
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <div class="checkout_text">Name<span class="contact_form_star">*</span></div>
+                                </div>
+                                <div class="col-10">
+                                    <input class="section_comments_input mb-3" type="text" name="name" required />
+                                    <button class="section_comments_button_button mb-5">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane tab_content p-3 fade" id="additional_information">
+                        <div class="row">
+                            <div class="col-3 checkout_described mb-2 pb-2">
+                                <div class="checkout_text">Weight</div>
+                            </div>
+                            <div class="col-9 checkout_described mb-2 pb-2">
+                                <div class="checkout_text">1.5 kg</div>
+                            </div>
+                            <div class="col-3 checkout_described mb-2 pb-2">
+                                <div class="checkout_text">Dimensions	</div>
+                            </div>
+                            <div class="col-9 checkout_described mb-2 pb-2">
+                                <div class="checkout_text">90 x 60 x 90 cm</div>
+                            </div>
+                            <div class="col-3 checkout_described mb-2 pb-2">
+                                <div class="checkout_text">Colour</div>
+                            </div>
+                            <div class="col-9 checkout_described mb-2 pb-2">
+                                <div class="checkout_text">Blue, Gray, Red</div>
+                            </div>
+                            <div class="col-3 checkout_described mb-2 pb-2">
+                                <div class="checkout_text">Size</div>
+                            </div>
+                            <div class="col-9 checkout_described mb-2 pb-2">
+                                <div class="checkout_text">Extra Small, Large, Medium, Small</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
+
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
-                        <ul class="nav nav-tabs d-flex flex-column mr-4">
-                            <li class="active"><a href="#all" data-toggle="tab" aria-expanded="false">All</a></li>
-                            <li><a href="#women" data-toggle="tab" aria-expanded="false">Women</a></li>
-                            <li><a href="#men" data-toggle="tab" aria-expanded="false">Men</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-9">
-                        <div class="tab-content">
-                            <div class="tab-pane fade show active" id="all">
-                                all
-                            </div>
-                            <div class="tab-pane fade" id="women">
-                                Women
-                            </div>
-                            <div class="tab-pane fade" id="men">
-                                men
-                            </div>
-                        </div>
+                    <div class="col-12">
+                    <!-- Related Products -->
+					<div class="products_slider_wrap custom_slider">
+						<div class="d-flex align-items-center justify-content-between mb-2">
+							<h2 class="products_slider_title">Related Products</h2>
+							<div class="d-flex align-items-center">
+								<div class="ml-3 d-flex">
+									<i class="fas fa-angle-left products_slider_nav d-flex align-items-center justify-content-center customPrevBtn"></i>
+									<i class="fas fa-angle-right products_slider_nav d-flex align-items-center justify-content-center customNextBtn ml-2"></i>
+								</div>
+							</div>
+						</div>
+
+						<div class="categories_slider owl-carousel owl-theme mb-4">
+							<div class="slider_item">
+								<div class="prod_card d-flex flex-column">
+                                    <div class="prod_card_label new pt-1 pb-1 pl-2 pr-2">New</div>
+									<div class="prod_card_img d-flex align-items-center justify-content-center p-1 mb-3">
+										<img src="img/raincoat.png" alt="img">
+										<div class="prod_card_actions d-flex">
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-shopping-cart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-heart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-exchange-alt"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<a class="prod_card_title p-2 d-flex justify-content-center" href="#">Audio Splitter Cable - White</a>
+									<div class="prod_card_price mb-2">$15.00</div>
+									<div class="prod_card_rate mb-2">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+							<div class="slider_item">
+								<div class="prod_card d-flex flex-column">
+									<div class="prod_card_label new pt-1 pb-1 pl-2 pr-2">New</div>
+									<div class="prod_card_img d-flex align-items-center justify-content-center p-1 mb-3">
+										<img src="img/Buildskill.jpg" alt="img">
+										<div class="prod_card_actions d-flex">
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-shopping-cart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-heart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-exchange-alt"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<a class="prod_card_title p-2 d-flex justify-content-center" href="#">Build Impact 3m Reversible</a>
+									<div class="prod_card_price mb-2">$669.00</div>
+									<div class="prod_card_rate mb-2">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+							<div class="slider_item">
+								<div class="prod_card d-flex flex-column">
+									<div class="prod_card_label sale pt-1 pb-1 pl-2 pr-2">Sale</div>
+									<div class="prod_card_img d-flex align-items-center justify-content-center p-2 mb-3">
+										<img src="img/audio_splitter.jpeg" alt="img">
+										<div class="prod_card_actions d-flex">
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-shopping-cart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-heart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-exchange-alt"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<a class="prod_card_title p-2 d-flex justify-content-center" href="#">Microsoft Lumia U169</a>
+									<div class="prod_card_price mb-2">$142.00</div>
+									<div class="prod_card_rate mb-2">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+							<div class="slider_item">
+								<div class="prod_card d-flex flex-column">
+									<div class="prod_card_img d-flex align-items-center justify-content-center p-2 mb-3">
+										<img src="img/raincoat.png" alt="img">
+										<div class="prod_card_actions d-flex">
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-shopping-cart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-heart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-exchange-alt"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<a class="prod_card_title p-2 d-flex justify-content-center" href="#">Cillcips Air Purifier A215</a>
+									<div class="prod_card_price mb-2">$90.00</div>
+									<div class="prod_card_rate mb-2">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+							<div class="slider_item">
+								<div class="prod_card d-flex flex-column">
+									<div class="prod_card_img d-flex align-items-center justify-content-center p-2 mb-3">
+										<img src="img/raincoat.png" alt="img">
+										<div class="prod_card_actions d-flex">
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-shopping-cart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-heart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-exchange-alt"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<a class="prod_card_title p-2 d-flex justify-content-center" href="#">Skinn Celeste Woman EDP</a>
+									<div class="prod_card_price mb-2">$56.00</div>
+									<div class="prod_card_rate mb-2">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+							<div class="slider_item">
+								<div class="prod_card d-flex flex-column">
+									<div class="prod_card_label new pt-1 pb-1 pl-2 pr-2">New</div>
+									<div class="prod_card_img d-flex align-items-center justify-content-center p-2 mb-3">
+										<img src="img/skinn.webp" alt="img">
+										<div class="prod_card_actions d-flex">
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-shopping-cart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-heart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-exchange-alt"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<a class="prod_card_title p-2 d-flex justify-content-center" href="#">Apple iPhone 7 (32GB)</a>
+									<div class="prod_card_price mb-2">$289.00</div>
+									<div class="prod_card_rate mb-2">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+							<div class="slider_item">
+								<div class="prod_card d-flex flex-column">
+									<div class="prod_card_label sale pt-1 pb-1 pl-2 pr-2">Sale</div>
+									<div class="prod_card_img d-flex align-items-center justify-content-center p-2 mb-3">
+										<img src="img/skinn.webp" alt="img">
+										<div class="prod_card_actions d-flex">
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-shopping-cart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-heart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-exchange-alt"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<a class="prod_card_title p-2 d-flex justify-content-center" href="#">Sasik External Disk-500GB</a>
+									<div class="prod_card_price mb-2">$135.00</div>
+									<div class="prod_card_rate mb-2">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+							<div class="slider_item">
+								<div class="prod_card d-flex flex-column">
+									<div class="prod_card_img d-flex align-items-center justify-content-center p-2 mb-3">
+										<img src="img/skinn.webp" alt="img">
+										<div class="prod_card_actions d-flex">
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-shopping-cart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-heart"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="fas fa-exchange-alt"></i>
+											</a>
+											<a href="#" class="prod_card_actions_item d-flex align-items-center justify-content-center">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<a class="prod_card_title p-2 d-flex justify-content-center" href="#">Skinn Celeste Woman EDP</a>
+									<div class="prod_card_price mb-2">$56.00</div>
+									<div class="prod_card_rate mb-2">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
                     </div>
                 </div>
             </div>
