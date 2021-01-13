@@ -80,13 +80,89 @@
             text-align: center;
         }
     }
+    .menu_item  {
+        margin-left: 5px !important;
+        padding-right: 5px !important;
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+    }
+    .fa-heart,
+    .far {
+        margin-right: 3px;
+    }
+    .header_logo  {
+        // height: 20px;
+        display: none;
+    }
+    .search_form_categories_field {
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+    }
+    .search_form_categories {
+        display: none;
+    }
+    // .search_form_input {
+    //     width: 170px;
+    // }
+    .social_net a {
+        width: 25px;
+        height: 25px;
+    }
+    .social_form input {
+        width: 100%;
+    }
+    .social_btn {
+        min-width: 50px;
+    }
+    .header_menu_shop {
+        margin-left: 8px !important;
+    }
+    .call_us  {
+        display: none;
+    }
 }
 
 /* ≥576px */
 @include media-breakpoint-down(xs) {
-
+    // .header_button_app {
+    //     display: none;
+    // }
+    // .basket_item {
+    //     display: none !important;
+    // }
+    .basket_btn  {
+        margin-left: 5px !important;
+    }
+    // .header_menu_content  {
+    //     display: none !important;
+    // }
+    .basket_item {
+        // display: flex !important;
+        // width: 100%;
+    }
+    .basket_btn {
+        border-radius: 3px 0px 0px 3px;
+    }
+    .header_menu_content  {
+        display: none !important;
+    }
 }
-
+@media (max-width: 320px) {
+    .header_menu_content  {
+        display: none !important;
+    }
+    .basket_item {
+        display: none !important;
+    }
+    .header_button_app {
+        display: none;
+    }
+    .social_net a {
+        width: 22px;
+        height: 22px;
+    }
+}
 
 /* ==========  Mobile First  ========== */
 
