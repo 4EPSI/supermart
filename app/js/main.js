@@ -99,6 +99,32 @@ $('.categories_slider').owlCarousel({
         }
     }
 })
+// Brand Partners
+$('.brand_partners').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: false,
+    mouseDrag: false,
+    items: 5,
+    responsive : {
+        0: {
+            items: 1
+        },
+        767: {
+            items: 2
+        },
+        768: {
+            items: 3
+        },
+        992: {
+            items: 4
+        },
+        993: {
+            items: 5
+        }
+    }
+})
 // Products Slider Multiply
 $('.products_slider_multiply').owlCarousel({
     loop: true,

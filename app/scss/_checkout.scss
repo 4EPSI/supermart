@@ -121,6 +121,11 @@
                 text-align: left;
             }
         }
+        &_title {
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $text;
+        }
 
     }
     &_img {
