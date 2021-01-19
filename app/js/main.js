@@ -121,24 +121,15 @@ $('.brand_partners').owlCarousel({
     nav: false,
     dots: false,
     mouseDrag: false,
-    items: 2,
-    // responsive : {
-    //     0: {
-    //         items: 1
-    //     },
-    //     767: {
-    //         items: 2
-    //     },
-    //     768: {
-    //         items: 3
-    //     },
-    //     992: {
-    //         items: 4
-    //     },
-    //     993: {
-    //         items: 5
-    //     }
-    // }
+    items: 5,
+    responsive : {
+        0: {
+            items: 2
+        },
+        768: {
+            items: 5
+        }
+    }
 })
 // Products Slider Multiply
 $('.products_slider_multiply').owlCarousel({

@@ -55,9 +55,9 @@
     .map {
         margin-bottom: 15px;
     }
-    .contact_form_input {
-        margin-bottom:5px !important;
-    }
+    // .contact_form_input {
+    //     margin-bottom:5px !important;
+    // }
     .blog_content_img {
         height: 250px;
     }
@@ -148,6 +148,20 @@
             display: block;
         }
     }
+    .workers_section_social {
+        font-size: 24px;
+    }
+    .header_menu_content {
+        margin-left: -15px;
+        margin-right: -15px;
+        ul {
+            width: 100%;
+            li {
+                flex-grow: 1;
+            }
+        }
+    }
+
 }
 
 /* ≥576px */
