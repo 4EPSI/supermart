@@ -13,7 +13,6 @@
 							</ul>
 						</div>
 					</div>
-
 				</div>
 				<div class="d-flex align-items-center">
 					<a href="#" class="header_top_menu_item menu_item pr-3 ml-3">Help</a>
@@ -34,7 +33,8 @@
 		<div class="header_content pt-3 pb-3">
 			<div class="align-items-center container d-flex justify-content-between">
 				<a href="/" class="header_logo flex-shrink-0 mr-2">
-					<img src="img/logo_white.png" alt="img">
+					<img src="img/logo_white.png" alt="img" class="d-none d-md-block">
+					<img src="img/logo_mob.png" alt="img" class="d-block d-md-none">
 				</a>
 				<div class="d-flex align-items-center">
 					<form class="search_form d-flex align-items-center" action="#">
@@ -52,9 +52,15 @@
 						</div>
 						<button class="search_form_btn" type="submit"><i class="fas fa-search"></i></button>
 					</form>
-					<div class="basket d-flex">
+					<div class="basket d-flex align-items-center">
 						<button class="ml-4 basket_btn" type="submit"><i class="fas fa-shopping-bag"></i></button>
-						<div class="basket_item d-none d-lg-flex align-items-center">0 Item: <span>$0.00</span> </div>
+						<div class="basket_item d-md-flex align-items-center d-none">0 Item: <span>$0.00</span> </div>
+						<div class="burger d-md-none ml-2 d-flex d-block">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -96,5 +102,37 @@
 				</div>
 			</div>
 		</div>
+		<ul class="main_menu_content menu_mob">
+			<li class="main_list p-3">
+				<a href="#"><img src="img/fashion_clothing.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/mobile_phones.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/sports_outerwear.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/foods_fruits.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/beauty_health.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/shoes_bags.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/decors_home.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/electronics_hitech.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/accessories.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/digital_software.png" alt="img"></a>
+			</li>
+		</ul>
 	</header>
 

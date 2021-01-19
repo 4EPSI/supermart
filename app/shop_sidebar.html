@@ -43,7 +43,6 @@
 							</ul>
 						</div>
 					</div>
-
 				</div>
 				<div class="d-flex align-items-center">
 					<a href="#" class="header_top_menu_item menu_item pr-3 ml-3">Help</a>
@@ -64,7 +63,8 @@
 		<div class="header_content pt-3 pb-3">
 			<div class="align-items-center container d-flex justify-content-between">
 				<a href="/" class="header_logo flex-shrink-0 mr-2">
-					<img src="img/logo_white.png" alt="img">
+					<img src="img/logo_white.png" alt="img" class="d-none d-md-block">
+					<img src="img/logo_mob.png" alt="img" class="d-block d-md-none">
 				</a>
 				<div class="d-flex align-items-center">
 					<form class="search_form d-flex align-items-center" action="#">
@@ -82,9 +82,15 @@
 						</div>
 						<button class="search_form_btn" type="submit"><i class="fas fa-search"></i></button>
 					</form>
-					<div class="basket d-flex">
+					<div class="basket d-flex align-items-center">
 						<button class="ml-4 basket_btn" type="submit"><i class="fas fa-shopping-bag"></i></button>
-						<div class="basket_item d-none d-lg-flex align-items-center">0 Item: <span>$0.00</span> </div>
+						<div class="basket_item d-md-flex align-items-center d-none">0 Item: <span>$0.00</span> </div>
+						<div class="burger d-md-none ml-2 d-flex d-block">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -126,6 +132,38 @@
 				</div>
 			</div>
 		</div>
+		<ul class="main_menu_content menu_mob">
+			<li class="main_list p-3">
+				<a href="#"><img src="img/fashion_clothing.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/mobile_phones.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/sports_outerwear.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/foods_fruits.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/beauty_health.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/shoes_bags.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/decors_home.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/electronics_hitech.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/accessories.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/digital_software.png" alt="img"></a>
+			</li>
+		</ul>
 	</header>
 
 
@@ -841,8 +879,8 @@
                         <button class="social_btn" type="submit">Submit</button>
                     </form>
                 </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-center">
-                    <div class="social_text mr-3  d-lg-flex">Keep in touch</div>
+                <div class="col-md-6 col-lg-4 social_cta d-flex align-items-center">
+                    <div class="social_text mr-3  d-lg-flex mt-2 mb-2">Keep in touch</div>
                     <div class="social_net d-flex">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -862,10 +900,10 @@
                     <div class="footer_logo mb-3">
                         <img src="img/logo.png" alt="img">
                     </div>
-                    <div class="mb-1">Many say exploration is part of our dest but it’s actually our duty to future and their.</div>
-                    <div class="mb-1"><span>Address:</span> <a href="https://www.google.com/maps/place/%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/data=!4m2!3m1!1s0x4127a09f63ab0f8b:0x2d4c18681aa4be0a?sa=X&ved=2ahUKEwjYpNjSktXsAhXQwosKHZjWAtIQ8gEwAHoECAsQAQ" target="_blank">868 Fake Street, New York</a></div>
-                    <div class="mb-1"><span>Phone:</span> <a href="tel:(08)0847521499">(08) 08 4752 1499</a></div>
-                    <div class="mb-1"><span>Email:</span> <a href="info@supermart.com" target="_blank">info@supermart.com</a></div>
+                    <div class="mb-2">Many say exploration is part of our dest but it’s actually our duty to future and their.</div>
+                    <div class="mb-2"><span>Address:</span> <a href="https://www.google.com/maps/place/%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/data=!4m2!3m1!1s0x4127a09f63ab0f8b:0x2d4c18681aa4be0a?sa=X&ved=2ahUKEwjYpNjSktXsAhXQwosKHZjWAtIQ8gEwAHoECAsQAQ" target="_blank">868 Fake Street, New York</a></div>
+                    <div class="mb-2"><span>Phone:</span> <a href="tel:(08)0847521499">(08) 08 4752 1499</a></div>
+                    <div class="mb-2"><span>Email:</span> <a href="info@supermart.com" target="_blank">info@supermart.com</a></div>
                 </div>
                 <div class="footer_item col-lg-3 col-md-6 mb-4">
                     <div class="footer_title mb-4">company</div>

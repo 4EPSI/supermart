@@ -410,6 +410,9 @@
 		text-align: center;
 		transition: all 0.3s ease;
 		border-top: 2px solid transparent;
+		&:last-child {
+			border-right: none;
+		}
 
 		// // display: block;
         // // white-space: nowrap;

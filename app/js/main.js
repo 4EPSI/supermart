@@ -12,6 +12,21 @@ $('.home_slider').owlCarousel({
     ]
 });
 
+// Mobile menu
+$('.burger').on('click', function () {
+    $(this).toggleClass('active');
+    $('body').toggleClass('no_scroll');
+    $('.menu_mob').toggleClass('active');
+});
+$(document).on('click', function (e) {
+    if (!$(e.target).closest('.header').length) {
+        $('.burger').removeClass('active');
+        $('.menu_mob').removeClass('active');
+        $('body').removeClass('no_scroll');
+    }
+    e.stopPropagation();
+});
+
 // tabs
 $('.product_media span').on('click', function () {
     $('.product_media span').removeClass('active');
@@ -106,24 +121,24 @@ $('.brand_partners').owlCarousel({
     nav: false,
     dots: false,
     mouseDrag: false,
-    items: 5,
-    responsive : {
-        0: {
-            items: 1
-        },
-        767: {
-            items: 2
-        },
-        768: {
-            items: 3
-        },
-        992: {
-            items: 4
-        },
-        993: {
-            items: 5
-        }
-    }
+    items: 2,
+    // responsive : {
+    //     0: {
+    //         items: 1
+    //     },
+    //     767: {
+    //         items: 2
+    //     },
+    //     768: {
+    //         items: 3
+    //     },
+    //     992: {
+    //         items: 4
+    //     },
+    //     993: {
+    //         items: 5
+    //     }
+    // }
 })
 // Products Slider Multiply
 $('.products_slider_multiply').owlCarousel({
@@ -153,7 +168,7 @@ $('.brand_partners').owlCarousel({
     items: 6
 });
 
-var countDate = new Date('December 31, 2020 24:00:00').getTime();
+var countDate = new Date('December 31, 2021 24:00:00').getTime();
 
 function newYear(){
     var now = new Date().getTime();
