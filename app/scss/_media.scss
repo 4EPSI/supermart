@@ -148,6 +148,11 @@
             display: block;
         }
     }
+    .menu_mob_filters {
+        &.active {
+            display: block;
+        }
+    }
     .workers_section_social {
         font-size: 24px;
     }

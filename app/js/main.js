@@ -27,7 +27,20 @@ $(document).on('click', function (e) {
     e.stopPropagation();
 });
 
-
+// Mobile menu
+$('.burger_filter').on('click', function () {
+    $(this).toggleClass('active');
+    $('body').toggleClass('no_scroll');
+    $('.menu_mob_filters').toggleClass('active');
+});
+$(document).on('click', function (e) {
+    if (!$(e.target).closest('.main').length) {
+        $('.burger_filter').removeClass('active');
+        $('.menu_mob_filters').removeClass('active');
+        $('body').removeClass('no_scroll');
+    }
+    e.stopPropagation();
+});
 
 // tabs
 $('.product_media span').on('click', function () {
