@@ -27,6 +27,8 @@ $(document).on('click', function (e) {
     e.stopPropagation();
 });
 
+
+
 // tabs
 $('.product_media span').on('click', function () {
     $('.product_media span').removeClass('active');
