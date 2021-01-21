@@ -10,7 +10,7 @@
 /* ≥992px */
 @include media-breakpoint-down(md) {
     .search_form_input {
-        width: auto;
+        width: 270px;
     }
     .basket_btn {
         border-radius: 5px;
@@ -78,6 +78,9 @@
 
 /* ≥768px */
 @include media-breakpoint-down(sm) {
+    .search_form_input {
+        width: 160px;
+    }
     .footer {
         &_item {
             text-align: center;
@@ -148,11 +151,6 @@
             display: block;
         }
     }
-    .menu_mob_filters {
-        &.active {
-            display: block;
-        }
-    }
     .workers_section_social {
         font-size: 24px;
     }
@@ -177,6 +175,30 @@
     }
     .product_categories_text {
         font-size: 10px;
+    }
+    .menu_mob_filters {
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        height: 100vh;
+        overflow: auto;
+        &.active {
+            display: block !important;
+        }
+    }
+    .filter_close_btn {
+        font-size: 24px;
+    }
+    .menu_mob {
+        li {
+            background: #fff;
+        }
+        span {
+            background: black;
+        }
     }
 }
 

@@ -63,8 +63,8 @@
 		<div class="header_content pt-3 pb-3">
 			<div class="align-items-center container d-flex justify-content-between">
 				<a href="/" class="header_logo flex-shrink-0 mr-2">
-					<img src="img/logo_white.png" alt="img" class="d-none d-md-block">
-					<img src="img/logo_mob.png" alt="img" class="d-block d-md-none">
+					<img src="img/logo_white.png" alt="img" class="d-none d-lg-block">
+					<img src="img/logo_mob.png" alt="img" class="d-block d-lg-none">
 				</a>
 				<div class="d-flex align-items-center">
 					<form class="search_form d-flex align-items-center" action="#">
@@ -133,6 +133,12 @@
 			</div>
 		</div>
 		<ul class="main_menu_content menu_mob">
+			<li class="burger d-md-none ml-2 d-flex d-block">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+			</li>
 			<li class="main_list p-3">
 				<a href="#"><img src="img/fashion_clothing.png" alt="img"></a>
 			</li>
@@ -181,10 +187,11 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-3 d-none d-md-block">
-                        <div class="sidebar_block mb-4">
+                    <div class="col-md-3 d-none d-md-block menu_mob_filters">
+                        <div class="sidebar_block  mb-4">
                             <div class="sidebar_block_title p-3 d-flex align-items-center justify-content-between">
                                 <div>Categories</div>
+                                <i class="filter_close_btn fas fa-times d-block d-md-none"></i>
                             </div>
                             <div class="filters d-none d-lg-block">
                                 <div class="filter_group">
@@ -421,7 +428,7 @@
                     </div>
                     <div class="col-md-9 mb-4">
                         <div class="d-flex flex-column align-items-center justify-content-between mb-3">
-                            <div class="shop_sidebar_showing d-flex align-items-center">
+                            <div class="shop_sidebar_showing mb-2 d-flex align-items-center">
                                 Showing 1-16 of 24 Products
                                 <div class="dropdown d_select d-flex ml-2">
                                     <div class="shop_sidebar_item menu_item_drop dropdown-toggle d-flex align-items-center justify-content-center mr-2 pl-2 pr-2" id="numbering" data-toggle="dropdown">8</div>
@@ -446,12 +453,8 @@
                                 <div class="d-flex align-items-center">
                                     <i class="default_sorting grid d-flex align-items-center justify-content-center fas fa-th"></i>
                                     <i class="default_sorting list active d-flex align-items-center justify-content-center fas fa-list"></i>
-                                    <div class="burger_filter d-md-none ml-2 d-flex d-block">
+                                    <div class="filter_btn d-md-none d-flex d-block align-items-center justify-content-center">
                                         <i class="fas fa-filter"></i>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
                                     </div>
                                 </div>
                             </div>
@@ -823,209 +826,6 @@
                             <a class="page_switching_content d-flex justify-content-center align-items-center mr-2" href="#">></a>
                         </div>
                     </div>
-                </div>
-                <div class="menu_mob_filters">
-                    <div class="sidebar_block mb-4">
-                        <div class="sidebar_block_title p-3 d-flex align-items-center justify-content-between">
-                            <div>Categories</div>
-                        </div>
-                        <div class="filters d-none d-lg-block">
-                            <div class="filter_group">
-                                <div class="filter_group_text d-flex align-items-center justify-content-between pl-3 pr-3" data-toggle="collapse" data-target="#filter_g1">Fashion Clothing (128)<i class="fas fa-angle-up"></i></div>
-                                <div id="filter_g1" class="filter_list collapse">
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Apple</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                                        <label class="form-check-label" for="exampleCheck2">Motorola</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck3">
-                                        <label class="form-check-label" for="exampleCheck3">Xiaomi</label>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="filter_group">
-                                <div class="filter_group_text d-flex align-items-center justify-content-between pl-3 pr-3" data-toggle="collapse" data-target="#filter_g2">Mobile Phones (89)</div>
-                            </div>
-    
-                            <div class="filter_group">
-                                <div class="filter_group_text d-flex align-items-center justify-content-between pl-3 pr-3" data-toggle="collapse" data-target="#filter_g3">Electronics & Hitech (205)<i class="fas fa-angle-up"></i></div>
-                                <div id="filter_g3" class="filter_list collapse">
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck4">
-                                        <label class="form-check-label" for="exampleCheck1">Apple</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck5">
-                                        <label class="form-check-label" for="exampleCheck2">Motorola</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck6">
-                                        <label class="form-check-label" for="exampleCheck3">Xiaomi</label>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="filter_group">
-                                <div class="filter_group_text d-flex align-items-center justify-content-between pl-3 pr-3" data-toggle="collapse" data-target="#filter_g4">Foods & Fruits (118)</div>
-                            </div>
-    
-                            <div class="filter_group">
-                                <div class="filter_group_text d-flex align-items-center justify-content-between pl-3 pr-3" data-toggle="collapse" data-target="#filter_g5">Beauty & Health (45)<i class="fas fa-angle-up"></i></div>
-                                <div id="filter_g5" class="filter_list collapse">
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck7">
-                                        <label class="form-check-label" for="exampleCheck1">Apple</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck8">
-                                        <label class="form-check-label" for="exampleCheck2">Motorola</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck9">
-                                        <label class="form-check-label" for="exampleCheck3">Xiaomi</label>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="filter_group">
-                                <div class="filter_group_text d-flex align-items-center justify-content-between pl-3 pr-3" data-toggle="collapse" data-target="#filter_g6">Shoes & Bags (23)<i class="fas fa-angle-up"></i></div>
-                                <div id="filter_g6" class="filter_list collapse">
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck10">
-                                        <label class="form-check-label" for="exampleCheck1">Apple</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck11">
-                                        <label class="form-check-label" for="exampleCheck2">Motorola</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck12">
-                                        <label class="form-check-label" for="exampleCheck3">Xiaomi</label>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="filter_group">
-                                <div class="filter_group_text d-flex align-items-center justify-content-between pl-3 pr-3" data-toggle="collapse" data-target="#filter_g7">Decors & Home (19)</div>
-                            </div>
-    
-                            <div class="filter_group">
-                                <div class="filter_group_text d-flex align-items-center justify-content-between pl-3 pr-3" data-toggle="collapse" data-target="#filter_g8">Sports & Outerwear (34)</div>
-                            </div>
-    
-                        </div>
-                    </div>
-    
-                    <h2 class="filter_title">Filter by</h2>
-                    <div class="sidebar_block">
-                        <div class="filter_group">
-                            <div class="filter_group_text_content d-flex align-items-center justify-content-between pl-3 pr-3" data-toggle="collapse" data-target="#filter_g9">Brands<i class="fas fa-angle-up"></i></div>
-                            <div id="filter_g9" class="filter_list collapse show">
-                                <div class=" mb-3 mt-3">
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck13">
-                                        <label class="form-check-label" for="exampleCheck1">Adcom</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck14">
-                                        <label class="form-check-label" for="exampleCheck2">Brillon</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck15">
-                                        <label class="form-check-label" for="exampleCheck3">Datawind</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck16">
-                                        <label class="form-check-label" for="exampleCheck3">GoodOne</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck17">
-                                        <label class="form-check-label" for="exampleCheck3">I-Smart</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck18">
-                                        <label class="form-check-label" for="exampleCheck3">Kenxinda</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filter_group">
-                            <div class="filter_group_text_content d-flex align-items-center justify-content-between pl-3 pr-3" data-toggle="collapse" data-target="#filter_g10">Price<i class="fas fa-angle-up"></i></div>
-                            <div id="filter_g10" class="filter_list collapse show">
-                                <div class=" mt-3 mb-3">
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck19">
-                                        <label class="form-check-label" for="exampleCheck1">Under $50</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck20">
-                                        <label class="form-check-label" for="exampleCheck2">$50 - $100</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck21">
-                                        <label class="form-check-label" for="exampleCheck3">$100 - $200</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck22">
-                                        <label class="form-check-label" for="exampleCheck3">$200 - $500</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck23">
-                                        <label class="form-check-label" for="exampleCheck3">I-Above $500</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filter_group">
-                            <div class="filter_group_text_content d-flex align-items-center justify-content-between pl-3 pr-3" data-toggle="collapse" data-target="#filter_g11">Colour<i class="fas fa-angle-up"></i></div>
-                            <div id="filter_g11" class="filter_list collapse show">
-                                <div class="d-flex pt-2 align-items-center justify-content-between flex-wrap">
-                                    <div class="color mb-2 black"></div>
-                                    <div class="color mb-2 blue"></div>
-                                    <div class="color mb-2 carmine"></div>
-                                    <div class="color mb-2 light_amber"></div>
-                                    <div class="color mb-2 light_gray"></div>
-                                    <div class="color mb-2 light_green"></div>
-                                    <div class="color mb-2 light_orange"></div>
-                                    <div class="color mb-2 light_pink"></div>
-                                    <div class="color mb-2 gold"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filter_group">
-                            <div class="filter_group_text_content d-flex align-items-center justify-content-between pl-3 pr-3" data-toggle="collapse" data-target="#filter_g12">Type<i class="fas fa-angle-up"></i></div>
-                            <div id="filter_g12" class="filter_list collapse show">
-                                <div class=" mt-3 mb-3">
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck24">
-                                        <label class="form-check-label" for="exampleCheck1">Casual</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck25">
-                                        <label class="form-check-label" for="exampleCheck2">Modern</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck26">
-                                        <label class="form-check-label" for="exampleCheck3">Traditioal</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck27">
-                                        <label class="form-check-label" for="exampleCheck3">Vintage</label>
-                                    </div>
-                                    <div class="filter_item">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck28">
-                                        <label class="form-check-label" for="exampleCheck3">Western Style</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
                 </div>
             </div>
 	</main>

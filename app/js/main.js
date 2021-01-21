@@ -14,7 +14,7 @@ $('.home_slider').owlCarousel({
 
 // Mobile menu
 $('.burger').on('click', function () {
-    $(this).toggleClass('active');
+    $('.burger').toggleClass('active');
     $('body').toggleClass('no_scroll');
     $('.menu_mob').toggleClass('active');
 });
@@ -27,20 +27,21 @@ $(document).on('click', function (e) {
     e.stopPropagation();
 });
 
-// Mobile menu
-$('.burger_filter').on('click', function () {
-    $(this).toggleClass('active');
-    $('body').toggleClass('no_scroll');
-    $('.menu_mob_filters').toggleClass('active');
+// Mobile menu filter
+$('.filter_btn').on('click', function () {
+    $('.menu_mob_filters').addClass('active');
 });
-$(document).on('click', function (e) {
-    if (!$(e.target).closest('.main').length) {
-        $('.burger_filter').removeClass('active');
-        $('.menu_mob_filters').removeClass('active');
-        $('body').removeClass('no_scroll');
-    }
-    e.stopPropagation();
+$('.filter_close_btn').on('click', function () {
+    $('.menu_mob_filters').removeClass('active');
 });
+// $(document).on('click', function (e) {
+//     if (!$(e.target).closest('.main').length) {
+//         $('.burger_filter').removeClass('active');
+//         $('.menu_mob_filters').removeClass('active');
+//         $('body').removeClass('no_scroll');
+//     }
+//     e.stopPropagation();
+// });
 
 // tabs
 $('.product_media span').on('click', function () {
